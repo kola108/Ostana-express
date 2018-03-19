@@ -1,0 +1,1188 @@
+@font-face {
+  font-family: 'HelveticaNeueCyr';
+  src: url('../fonts/HelveticaNeueCyr-Roman.eot');
+  src: local('../fonts/HelveticaNeueCyr-Roman'), url('../fonts/HelveticaNeueCyr-Roman.eot?#iefix') format('embedded-opentype'), url('../fonts/HelveticaNeueCyr-Roman.woff') format('woff'), url('../fonts/HelveticaNeueCyr-Roman.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+.btn {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'HelveticaNeueCyr', sans-serif;
+  font-size: 15px;
+  line-height: 1.53;
+  display: inline-block;
+  border: 2px solid #00bc65;
+  border-radius: 40px;
+  padding: 8px 18px;
+  transition: all 0.2s linear;
+  color: black;
+}
+.btn:hover {
+  background-color: #00bc65;
+}
+.commonHeader {
+  font-family: 'Roboto', sans-serif;
+  font-size: 30px;
+  font-weight: lighter;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin: 0;
+}
+.commonHeader:after {
+  content: '';
+  display: block;
+  width: 73px;
+  height: 2px;
+  border-bottom: 3px solid #00bc65;
+  margin: 6px auto;
+}
+/*....................................HEADER....................................*/
+header {
+  height: 205px;
+  background-color: #242b33;
+}
+header .btn {
+  text-transform: none;
+  padding: 10px 20px 10px 20px!important;
+  text-decoration: none;
+  color: white;
+  font-family: 'HelveticaNeueCyr', sans-serif;
+  font-size: 18px;
+  margin-left: -20px;
+}
+.logo {
+  height: 157px;
+  width: 157px;
+  padding: 23px 0 25px 377px;
+  float: left;
+}
+#headerPhone {
+  padding: 16px 372px 0 0;
+  text-align: right;
+}
+#headerPhone img {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+}
+#headerPhone .phoneNumber {
+  color: white;
+  display: inline-block;
+  padding-top: 13px;
+  margin: 0;
+  vertical-align: top;
+  text-align: right;
+  font-family: 'HelveticaNeueCyr', sans-serif;
+}
+#headerNav {
+  text-align: center;
+  display: inline-block;
+  padding: 30px 0 0 37px;
+}
+#headerNav .active {
+  border-bottom: 2px solid #00bc65;
+}
+.headerNavItem {
+  text-decoration: none;
+  color: white;
+  font-family: 'HelveticaNeueCyr', sans-serif;
+  font-size: 18px;
+  padding: 20px 40px 6px 4px;
+  margin-left: -4px;
+}
+.headerNavItem:after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  width: 40px;
+  height: 30px;
+  margin-left: 4px;
+  background-color: #242b33;
+}
+.headerNavItem:hover {
+  border-bottom: 2px solid #00bc65;
+}
+.headerNavItem:last-child {
+  margin-right: 20px;
+}
+/*....................................Car Rental....................................*/
+#carRental {
+  background-color: #f4f4f4;
+}
+#carRental h1 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 40px;
+  text-align: center;
+  padding-top: 82px;
+  margin: 0;
+  line-height: 0.83;
+  text-transform: uppercase;
+  font-weight: bolder;
+  letter-spacing: 1px;
+}
+#carRentalTabs {
+  width: 640px;
+  margin-top: 82px;
+  margin-bottom: 75px;
+}
+#carRentalTabs .active {
+  background-color: white;
+}
+#carRentalTabs .active :after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  opacity: 1;
+  left: 640px;
+  margin-top: -20px;
+  border: 31px solid transparent;
+  border-left: 15px solid white;
+}
+.rentalTab {
+  text-align: left;
+  display: block;
+  text-decoration: none;
+  font-family: 'HelveticaNeueCyr', sans-serif;
+  font-size: 16px;
+  padding: 13px 0 13px 380px;
+  color: black;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+.rentalTab #IntercityIco {
+  padding-right: 21px;
+  display: inline-block;
+}
+.rentalTab #TouristIco {
+  padding-right: 17px;
+  display: inline-block;
+}
+.rentalTab #CorporateIco {
+  padding-right: 19px;
+  display: inline-block;
+}
+.rentalTab #ChildrenIco {
+  padding-right: 25px;
+  display: inline-block;
+}
+.rentalTab #TransferIco {
+  padding-right: 16px;
+  padding-top: 8px;
+  display: inline-block;
+}
+.rentalTab #WeddingIco {
+  padding-right: 23px;
+  display: inline-block;
+}
+.rentalTab p {
+  display: inline-block;
+  vertical-align: top;
+  margin: 8px 0 0 0;
+}
+.rentalTab :after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  left: 640px;
+  opacity: 0;
+  margin-top: -20px;
+  border: 31px solid transparent;
+  border-left: 15px solid white;
+}
+.rentalTab:hover {
+  background-color: white;
+}
+.rentalTab:hover :after {
+  opacity: 1;
+}
+#carRentalTabs,
+#carRentalContent {
+  display: inline-block;
+}
+.carRentSlideIntercity,
+.carRentSlideTourist,
+.carRentSlideCorporate,
+.carRentSlideChildren,
+.carRentSlideTransfer,
+.carRentSlideWedding {
+  display: none;
+}
+.carRentSlideIntercity.active,
+.carRentSlideTourist.active,
+.carRentSlideCorporate.active,
+.carRentSlideChildren.active,
+.carRentSlideTransfer.active,
+.carRentSlideWedding.active {
+  display: inline-block;
+}
+#carRentalContent {
+  vertical-align: top;
+  padding: 82px 0 100px 100px;
+  text-align: left;
+  width: 60%;
+  margin: 0;
+}
+#carRentalContent .commonHeader {
+  width: 331px;
+  display: block;
+}
+#carRentalContent article {
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  padding: 50px 0 92px 0;
+  line-height: 1.53;
+  display: block;
+  width: 331px;
+}
+#carRentalContent .btn {
+  text-transform: uppercase;
+  color: black;
+  font-family: 'HelveticaNeueCyr', sans-serif;
+  font-size: 15px;
+  line-height: 1.53;
+  position: absolute;
+  z-index: 10000;
+}
+#carRentalContent .btn img {
+  width: 14px;
+  height: 10px;
+  margin: 0;
+}
+#carRentalContent .commonHeader {
+  display: inline-block;
+}
+#carRentalContent .commonHeader:after {
+  margin: 6px 0;
+}
+.carRentImg {
+  position: absolute;
+  width: 1282px;
+  height: 512px;
+  right: 0;
+  top: 347px;
+}
+/*....................................Auto park....................................*/
+#autoPark {
+  text-align: center;
+}
+#autoPark .commonHeader {
+  padding-top: 85px;
+  padding-bottom: 47px;
+  text-align: center;
+}
+#autoParkNav {
+  margin-bottom: 30px;
+}
+#autoParkNav .active {
+  background-color: #00bc65;
+}
+#autoParkNav .active:after {
+  content: '';
+  display: block;
+  width: 0;
+  opacity: 1;
+  border: 10px solid transparent;
+  border-top: 8px solid #00bc65;
+  margin: 8px auto;
+}
+.parkNavItem {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'HelveticaNeueCyr', sans-serif;
+  font-size: 15px;
+  line-height: 1.53;
+  display: inline-block;
+  border: 2px solid #00bc65;
+  border-radius: 40px;
+  padding: 8px 18px;
+  transition: all 0.2s linear;
+  color: black;
+  width: 155px;
+  height: 42px;
+  background-color: #f4f4f4;
+  border: none;
+  border-radius: 4px;
+  padding: 11px 0 0 0;
+  box-sizing: border-box;
+  margin-right: 2px;
+  cursor: pointer;
+}
+.parkNavItem:hover {
+  background-color: #00bc65;
+}
+.parkNavItem:after {
+  content: '';
+  display: block;
+  width: 0;
+  opacity: 0;
+  border: 10px solid transparent;
+  border-top: 8px solid #00bc65;
+  margin: 8px auto;
+}
+.parkNavItem:hover:after {
+  opacity: 1;
+}
+.autoParkCars {
+  display: inline-block;
+  width: 370px;
+  padding: 0 0 64px 0;
+  text-align: left;
+  margin-left: 28px;
+}
+.autoParkCars p {
+  display: inline-block;
+  font-family: 'HelveticaNeueCyr', sans-serif;
+  font-size: 14px;
+  padding-top: 8px;
+}
+.autoParkCars .btn {
+  display: inline-block;
+  float: right;
+  margin-top: 15px;
+}
+.autoParkCars:hover .carHoverText {
+  opacity: 1;
+}
+.carHoverText {
+  display: block;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  width: 370px;
+  height: 260px;
+  z-index: 5;
+  color: white;
+  font-family: 'HelveticaNeueCyr', sans-serif;
+}
+.carHoverText h3 {
+  font-size: 18px;
+  line-height: 1.28;
+  text-align: center;
+  padding-top: 85px;
+  margin: 0;
+}
+.carHoverText p {
+  font-size: 14px;
+  line-height: 1.64;
+  padding: 17px 0 0 128px;
+  margin: 0;
+}
+.carsImg {
+  width: 370px;
+  height: 260px;
+  z-index: 4;
+}
+.greenText {
+  color: #00bc65;
+  font-size: 24px;
+}
+.autoParkSlideBuses,
+.autoParkSlideMicrobuses,
+.autoParkSlideMinivans,
+.autoParkSlideJeeps,
+.autoParkSlideCars {
+  display: none;
+}
+.autoParkSlideBuses.active,
+.autoParkSlideMicrobuses.active,
+.autoParkSlideMinivans.active,
+.autoParkSlideJeeps.active,
+.autoParkSlideCars.active {
+  display: inline-block;
+}
+#atoParkDescribing {
+  text-align: left;
+  margin: 0 366px 130px 375px;
+  font-family: 'HelveticaNeueCyr', sans-serif;
+  line-height: 1.53;
+}
+#atoParkDescribing h3 {
+  font-size: 18px;
+  font-weight: normal;
+}
+#atoParkDescribing p {
+  font-size: 15px;
+}
+#atoParkDescribing ul {
+  font-size: 15px;
+}
+/*....................................Online Calculator....................................*/
+#onlineCalculator {
+  background-color: #f4f4f4;
+  text-align: center;
+  font-family: 'HelveticaNeueCyr', sans-serif;
+}
+#onlineCalculator .commonHeader {
+  padding: 74px 0 40px 0;
+}
+#onlineCalculator:after {
+  content: '';
+  display: block;
+  height: 64px;
+  background-color: white;
+  margin-top: -64px;
+}
+#calcLeftContent,
+#calcRightContent {
+  display: inline-block;
+}
+#calcLeftContent {
+  width: 518px;
+  text-align: left;
+  font-size: 15px;
+  line-height: 1.53;
+  padding-bottom: 20px;
+}
+#calcRightContent {
+  width: 585px;
+  background-color: #00bc65;
+  margin-left: 64px;
+  vertical-align: top;
+  text-align: left;
+  padding-left: 150px;
+  box-sizing: border-box;
+}
+#calcRightContent h3 {
+  font-size: 20px;
+  line-height: 1.15;
+  margin-top: 41px;
+  margin-left: -70px;
+}
+#calcRightContent input,
+#calcRightContent select {
+  display: block;
+  width: 288px;
+}
+#calcRightContent #calcRange {
+  -webkit-appearance: none;
+  border-radius: 100px;
+  height: 8px;
+  background: -webkit-linear-gradient(left, #242b33 0, #242b33 33%, white 33%, white 100%);
+  outline: none;
+}
+#calcRightContent #calcRange::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  background: white;
+  width: 20px;
+  height: 20px;
+  box-shadow: 0 2px 4px 0 rgba(140, 140, 140, 0.3), 0 -2px 4px 0 rgba(140, 140, 140, 0.2);
+  border-radius: 50%;
+  cursor: pointer;
+}
+#calcRightContent #calcRange::-moz-range-thumb {
+  -moz-appearance: none;
+  background: white;
+  width: 20px;
+  height: 20px;
+  box-shadow: 0 2px 4px 0 rgba(140, 140, 140, 0.3), 0 -2px 4px 0 rgba(140, 140, 140, 0.2);
+  border-radius: 50%;
+  cursor: pointer;
+}
+#calcRightContent select {
+  height: 30px;
+  border: none;
+  border-radius: 4px;
+  margin-bottom: 76px;
+  font-size: 15px;
+}
+#calcRightContent p:nth-child(3) {
+  padding-right: 68px;
+}
+#calcRightContent p:nth-child(4) {
+  padding-right: 63px;
+}
+#calcRightContent p:nth-child(5) {
+  padding-right: 52px;
+}
+.calcRightContText {
+  font-size: 15px;
+  line-height: 1.53;
+  margin: 28px 0 2px 0;
+}
+.calcNumbPassengers {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 12px;
+  line-height: 1;
+  display: inline-block;
+}
+#calcSubmit {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'HelveticaNeueCyr', sans-serif;
+  font-size: 15px;
+  line-height: 1.53;
+  display: inline-block;
+  border: 2px solid #00bc65;
+  border-radius: 40px;
+  padding: 8px 18px;
+  transition: all 0.2s linear;
+  color: black;
+  width: 259px;
+  background-color: #242b33;
+  color: white;
+  cursor: pointer;
+  margin: 0 0 42px 13px;
+}
+#calcSubmit:hover {
+  background-color: #00bc65;
+}
+#calcSubmit:hover {
+  background-color: white;
+  color: #00bc65;
+}
+/*....................................Advantages ....................................*/
+#advantages {
+  text-align: center;
+}
+#advantages .commonHeader {
+  padding-top: 139px;
+}
+#advantagesDescription {
+  font-family: 'HelveticaNeueCyr', sans-serif;
+  font-size: 15px;
+  line-height: 1.53;
+  padding-bottom: 74px;
+  width: 1162px;
+  margin: auto;
+}
+.advantagesFeatures {
+  vertical-align: top;
+  display: inline-block;
+  width: 340px;
+  text-align: left;
+  font-family: 'HelveticaNeueCyr', sans-serif;
+  margin-right: 66px;
+  padding-bottom: 120px;
+}
+.advantagesFeatures:last-child {
+  margin-right: 0;
+}
+.advantagesFeatures img {
+  width: 76px;
+  height: 76px;
+  float: left;
+}
+.advantagesFeatures h4 {
+  font-size: 18px;
+  line-height: 1.1;
+  margin: 0;
+  font-weight: normal;
+  padding-left: 100px;
+}
+.advantagesFeatures ul {
+  padding-left: 130px;
+  font-size: 15px;
+  line-height: 1.73;
+}
+/*....................................Transport order ....................................*/
+#transportOrder {
+  background-color: #242b33;
+  text-align: center;
+  padding-bottom: 209px;
+}
+#transportOrder .commonHeader {
+  padding: 94px 0 96px 0;
+  color: white;
+}
+#transportOrder input:focus {
+  outline: none;
+}
+#orderClientName,
+#orderClientPhone {
+  font-family: 'HelveticaNeueCyr', sans-serif;
+  font-size: 14px;
+  color: gray;
+  display: inline-block;
+  position: absolute;
+  margin-top: -8px;
+  margin-left: -500px;
+  transition: all 0.6s ease;
+}
+#orderFormName,
+#orderFormPhone {
+  width: 433px;
+  height: 40px;
+  color: white;
+  font-size: 18px;
+  font-family: 'HelveticaNeueCyr', sans-serif;
+  background-color: #242b33;
+  margin-right: 65px;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+}
+#orderFormName:hover + #orderClientName,
+#orderFormPhone:hover + #orderClientPhone {
+  font-size: 10px;
+  color: dimgray;
+  margin-top: -20px;
+}
+#orderSubmit {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'HelveticaNeueCyr', sans-serif;
+  font-size: 15px;
+  line-height: 1.53;
+  border: 2px solid #00bc65;
+  border-radius: 40px;
+  padding: 8px 18px;
+  transition: all 0.2s linear;
+  background-color: #242b33;
+  color: white;
+  cursor: pointer;
+  margin: 0 0 42px 13px;
+  width: 183px;
+  margin: 0;
+  display: inline-block;
+  vertical-align: bottom;
+}
+#orderSubmit:hover {
+  background-color: #00bc65;
+}
+#orderSubmit:hover {
+  background-color: white;
+  color: #00bc65;
+}
+#orderSubmit:hover {
+  background-color: #00bc65;
+  color: white;
+}
+/*....................................Testimonials....................................*/
+#testimonials {
+  text-align: center;
+  background-color: #f4f4f4;
+  padding-top: 139px;
+}
+#testimonials:after {
+  content: '';
+  display: block;
+  background-color: white;
+  height: 48px;
+  margin-top: -48px;
+}
+#testimonLeftContent,
+#testimonRightContent {
+  display: inline-block;
+  vertical-align: top;
+}
+#testimonLeftContent {
+  width: 502px;
+  text-align: left;
+  margin-right: 82px;
+}
+#testimonLeftContent .commonHeader {
+  margin-bottom: 70px;
+}
+#testimonLeftContent .commonHeader:after {
+  margin: 6px 0;
+}
+#sliderBtnLeft,
+#sliderBtnRight {
+  display: inline-block;
+  border: 2px solid #00bc65;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-top: 34px;
+  transition: all 0.2s linear;
+  cursor: pointer;
+}
+#sliderBtnLeft img,
+#sliderBtnRight img {
+  margin: 14px;
+  width: 14px;
+  height: 10px;
+}
+#sliderBtnLeft:hover,
+#sliderBtnRight:hover {
+  background-color: #00bc65;
+}
+#testimonRightContent {
+  width: 585px;
+  height: 408px;
+  background-color: #00bc65;
+  padding: 36px 37px 58px 46px;
+  box-sizing: border-box;
+}
+#testimonRightContent img {
+  width: 44.6px;
+  height: 37.7px;
+}
+#testimDescription {
+  font-family: 'HelveticaNeueCyr', sans-serif;
+  font-size: 15px;
+  line-height: 1.53;
+}
+.testimClientName {
+  font-family: 'HelveticaNeueCyr', sans-serif;
+  font-size: 18px;
+  line-height: 1.28;
+}
+.clientTestimonial {
+  font-family: 'HelveticaNeueCyr', sans-serif;
+  font-size: 15px;
+  line-height: 1.53;
+}
+.testimSlide {
+  opacity: 0;
+}
+.testimSlide.active {
+  opacity: 1;
+}
+/*....................................Rental describing....................................*/
+#rentDescribing {
+  text-align: center;
+  margin-bottom: 110px;
+}
+#rentDescribing .commonHeader {
+  padding: 156px 0 52px 0;
+}
+#renDescrContent {
+  font-family: 'HelveticaNeueCyr', sans-serif;
+  font-size: 15px;
+  line-height: 1.53;
+  text-align: left;
+  width: 1174px;
+  margin: 0 auto;
+}
+#renDescrContent h3 {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.1;
+}
+/*....................................Blog....................................*/
+#blog {
+  text-align: center;
+  background-color: #f4f4f4;
+}
+#blog .commonHeader {
+  padding: 71px 0 35px 0;
+}
+#blogFirstSection,
+#blogSecondSection {
+  width: 571px;
+  height: 664px;
+  display: inline-block;
+  vertical-align: top;
+  background-repeat: no-repeat;
+  background-size: 571px 380px;
+}
+#blogFirstSection {
+  background-image: url("../img/blogIMG1.jpg");
+}
+#blogSecondSection {
+  background-image: url("../img/blogIMG2.jpg");
+  margin-left: 28px;
+}
+.blogSecText {
+  width: 514px;
+  height: 276px;
+  background-color: white;
+  text-align: left;
+  margin: 306px auto 0 auto;
+  font-family: 'HelveticaNeueCyr', sans-serif;
+  font-size: 15px;
+  line-height: 1.53;
+}
+.blogSecText p {
+  padding: 20px 43px;
+  box-sizing: border-box;
+  margin: 0;
+}
+#blogFirstSecHead,
+#blogSecondSecHead {
+  color: white;
+  font-size: 18px;
+  line-height: 1.28;
+  display: inline-block;
+  width: 257px;
+  height: 74px;
+  margin: 0;
+  background-color: #00bc65;
+  text-transform: uppercase;
+  box-sizing: border-box;
+}
+#blogFirstSecHead {
+  padding: 27px 0 0 42px;
+}
+#blogSecondSecHead {
+  padding: 15px 0 0 42px;
+}
+/*....................................Footer....................................*/
+footer {
+  background-color: #242b33;
+  color: white;
+  font-family: 'HelveticaNeueCyr', sans-serif;
+  font-size: 14px;
+  text-align: center;
+  line-height: 1.14;
+  font-weight: 100;
+  padding-top: 30px;
+}
+footer p:nth-child(3) {
+  line-height: 1.64;
+  margin-left: 130px;
+}
+footer p:nth-child(4) {
+  line-height: 2;
+  text-transform: uppercase;
+  margin-left: 160px;
+}
+#footerLogo,
+.footerText {
+  display: inline-block;
+  text-align: left;
+  vertical-align: top;
+}
+#footerLogo {
+  width: 220px;
+}
+#footerLogo img {
+  width: 90px;
+  height: 90px;
+  display: block;
+  padding-top: 8px;
+}
+#footerLogo p {
+  padding-top: 26px;
+}
+.footerText {
+  width: 200px;
+  margin-left: 100px;
+}
+.footerText :last-child {
+  text-transform: uppercase;
+}
+#socialBar {
+  background-color: black;
+  display: block;
+  padding-top: 20px;
+  box-sizing: border-box;
+  height: 70px;
+}
+#socialBar nav,
+#socialBar p,
+#socialBar img {
+  display: inline-block;
+  vertical-align: top;
+}
+#socialBar a img {
+  height: 28px;
+  width: 28px;
+  transition: all 0.2s linear;
+}
+#socialBar p {
+  color: lightgray;
+  padding: 0 8px 20px 813px;
+}
+#socialBar img {
+  width: 89px;
+  height: 37px;
+  padding-right: 10px;
+}
+/*....................................Media queries....................................*/
+@media all and (max-width: 1910px) {
+  #carRentalTabs {
+    width: 33%;
+  }
+  #carRentalTabs .active :after {
+    display: none;
+  }
+  .rentalTab {
+    padding: 13px 0 13px 30%;
+  }
+  .rentalTab :after {
+    display: none;
+  }
+  .logo {
+    padding: 23px 0 25px 10%;
+  }
+  #advantagesDescription {
+    width: 80%;
+  }
+  #renDescrContent {
+    width: 90%;
+  }
+}
+@media all and (max-width: 1502px) {
+  #carRentalContent {
+    width: 59%;
+  }
+  #carRentalContent .commonHeader {
+    width: 80%;
+    display: block;
+  }
+  #carRentalContent article {
+    width: 80%;
+  }
+  .carRentImg {
+    width: 801px;
+    height: 320px;
+    top: 541px;
+  }
+  #sliderBtnLeft,
+  #sliderBtnRight {
+    margin-bottom: 20px;
+  }
+  #footerLogo {
+    width: 11%;
+    margin-left: 4%;
+  }
+  .footerText {
+    margin: 0 1%;
+  }
+}
+@media all and (max-width: 1353px) {
+  header .btn {
+    margin-top: 35px;
+    margin-left: 24%;
+  }
+  #carRentalContent {
+    padding: 80px 0 0 0;
+    margin: 0 0 0 10px;
+  }
+  #orderSubmit {
+    margin-top: 108px;
+  }
+  #socialBar {
+    text-align: center;
+    height: 200px;
+  }
+  #socialBar p {
+    display: block;
+    padding: 20px 0;
+  }
+}
+@media all and (max-width: 1135px) {
+  .headerNavItem {
+    padding: 0;
+    font-size: 15px;
+    margin: 10px 10px;
+  }
+  .headerNavItem:after {
+    display: none;
+  }
+  .carRentImg {
+    width: 754px;
+    height: 301px;
+    top: 598px;
+  }
+  #atoParkDescribing {
+    margin: 0 10% 100px 10%;
+  }
+  #testimonLeftContent {
+    text-align: center;
+    margin: 0;
+  }
+  #testimonLeftContent .commonHeader:after {
+    margin: 6px auto;
+  }
+  footer p:nth-child(3),
+  footer p:nth-child(4) {
+    margin: 0 5%;
+  }
+}
+@media all and (max-width: 1024px) {
+  #orderClientName,
+  #orderClientPhone {
+    display: block;
+    margin-top: -95px;
+    margin-left: calc(50% - 28px);
+  }
+  #orderFormName,
+  #orderFormPhone {
+    display: block;
+    margin: 40px auto;
+  }
+  #orderFormName:hover + #orderClientName,
+  #orderFormPhone:hover + #orderClientPhone {
+    margin-top: -100px;
+  }
+  footer p:nth-child(3),
+  footer p:nth-child(4) {
+    margin: 0 2%;
+  }
+}
+@media all and (max-width: 950px) {
+  header {
+    text-align: center;
+    height: 12%;
+  }
+  header .btn {
+    margin: 30px 0 0 0;
+  }
+  header .logo {
+    height: 20%;
+    width: 20%;
+    float: none;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px 0 0 0;
+  }
+  header #headerPhone {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+  .rentalTab p {
+    font-size: 14px;
+  }
+  .carRentImg {
+    display: none;
+  }
+}
+@media all and (max-width: 850px) {
+  .rentalTab p {
+    font-size: 12px;
+  }
+  .rentalTab #IntercityIco,
+  .rentalTab #TouristIco,
+  .rentalTab #CorporateIco,
+  .rentalTab #ChildrenIco,
+  .rentalTab #TransferIco,
+  .rentalTab #WeddingIco {
+    padding: 0;
+    display: block;
+  }
+  #autoParkNav .active:after {
+    display: none;
+  }
+  .parkNavItem:after {
+    display: block;
+  }
+  #calcRightContent {
+    width: 90%;
+    margin-left: 0;
+    padding-left: 24%;
+  }
+  footer p:nth-child(3),
+  footer p:nth-child(4) {
+    margin: 0 1%;
+  }
+  #footerLogo {
+    margin-left: 1%;
+  }
+  .footerText {
+    width: 25%;
+  }
+}
+@media all and (max-width: 730px) {
+  #footerLogo {
+    display: block;
+    margin: 10px auto;
+  }
+  #footerLogo p {
+    width: 200px;
+    margin-left: -70px;
+    margin-bottom: 40px;
+  }
+  .footerText {
+    width: 30%;
+  }
+}
+@media all and (max-width: 635px) {
+  #headerNav {
+    padding: 40px 0 0 0;
+  }
+  #carRental h1 {
+    font-size: 32px;
+  }
+  #calcLeftContent {
+    width: 80%;
+  }
+  #calcRightContent {
+    padding-left: 20%;
+  }
+  #testimonLeftContent,
+  #testimonRightContent {
+    width: 90%;
+  }
+  #testimonRightContent {
+    padding: 4%;
+    margin: 0;
+  }
+  #blogFirstSection,
+  #blogSecondSection {
+    width: 90%;
+  }
+  .blogSecText {
+    width: 86%;
+  }
+}
+@media all and (max-width: 500px) {
+  header {
+    height: 340px;
+  }
+  header .logo {
+    width: 100px;
+    height: 100px;
+  }
+  #carRentalContent .commonHeader {
+    font-size: 18px;
+    width: 40%;
+  }
+  .rentalTab {
+    padding-left: 8%;
+  }
+  .autoParkCars {
+    margin-left: 0;
+  }
+  #calcRightContent {
+    padding-left: 4%;
+  }
+  #calcRightContent h3 {
+    margin-left: 0;
+  }
+  #orderFormName,
+  #orderFormPhone {
+    width: 90%;
+  }
+  #testimonRightContent {
+    height: 500px;
+  }
+  #blogFirstSection,
+  #blogSecondSection {
+    height: 800px;
+  }
+  .blogSecText {
+    height: 400px;
+  }
+  .footerText {
+    font-size: 12px;
+  }
+}
+.wrapper-transportOrder {
+  width: 100%;
+  background-color: blue;
+}
+.container {
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.h:nth-last-child(1) {
+  margin-right: 0;
+}
+.wrapper-transportOrder .order-block-input {
+  display: block;
+  float: left;
+  max-width: 40%;
+  position: relative;
+}
+.wrapper-transportOrder .order-block-input {
+  width: 100%;
+}
+.wrapper-transportOrder .order-block-input p {
+  margin-top: 0 !important;
+  margin-left: 0 !important;
+  left: 0;
+  top: -8px;
+}
+.clear:after {
+  content: '';
+  display: block;
+  clear: both;
+}
