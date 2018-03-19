@@ -16,6 +16,8 @@
   border-radius: 40px;
   padding: 8px 18px;
   transition: all 0.2s linear;
+  color: black;
+  box-sizing: border-box;
 }
 .btn:hover {
   background-color: #00bc65;
@@ -27,6 +29,7 @@
   letter-spacing: 1px;
   text-transform: uppercase;
   margin: 0;
+  text-align: center;
 }
 .commonHeader:after {
   content: '';
@@ -36,37 +39,38 @@
   border-bottom: 3px solid #00bc65;
   margin: 6px auto;
 }
-/*....................................HEADER....................................*/
+.container {
+  max-width: 1175px;
+  margin: 0 auto;
+}
 .header {
   background-color: #242b33;
 }
-.header .header-container {
-  margin: 0 auto;
-  max-width: 1178px;
+.header .container {
   max-height: 205px;
   display: flex;
   justify-content: space-between;
 }
-.header .header-container .header-left-content {
+.header .container .header-left-content {
   padding: 23px 0;
 }
-.header .header-container .header-left-content .logo {
+.header .container .header-left-content .logo {
   height: 157px;
   width: 157px;
 }
-.header .header-container .header-right-content {
+.header .container .header-right-content {
   padding-top: 16px;
   width: 977px;
 }
-.header .header-container .header-right-content .headerPhone {
+.header .container .header-right-content .headerPhone {
   text-align: right;
 }
-.header .header-container .header-right-content .headerPhone img {
+.header .container .header-right-content .headerPhone img {
   width: 40px;
   height: 40px;
   display: inline-block;
 }
-.header .header-container .header-right-content .headerPhone .phoneNumber {
+.header .container .header-right-content .headerPhone .phoneNumber {
   color: white;
   display: inline-block;
   padding-top: 13px;
@@ -74,7 +78,7 @@
   vertical-align: top;
   font-family: 'HelveticaNeueCyr', sans-serif;
 }
-.header .header-container .header-right-content .headerNav {
+.header .container .header-right-content .headerNav {
   font-family: 'HelveticaNeueCyr', sans-serif;
   font-size: 18px;
   display: flex;
@@ -82,21 +86,20 @@
   align-items: center;
   margin-top: 30px;
 }
-.header .header-container .header-right-content .headerNav .headerNavItem {
+.header .container .header-right-content .headerNav .headerNavItem {
   text-decoration: none;
   color: white;
   border-bottom: 2px solid transparent;
 }
-.header .header-container .header-right-content .headerNav .headerNavItem:hover {
+.header .container .header-right-content .headerNav .headerNavItem:hover {
   border-bottom: 2px solid #00bc65;
 }
-.header .header-container .header-right-content .headerNav .btn {
+.header .container .header-right-content .headerNav .btn {
   text-transform: none;
   color: white;
   font-family: 'HelveticaNeueCyr', sans-serif;
   font-size: 18px;
 }
-/*....................................Car Rental....................................*/
 .carRental {
   background-color: #f4f4f4;
 }
@@ -183,6 +186,7 @@
 .carRental .car-rental-right-content .commonHeader {
   width: 331px;
   display: block;
+  text-align: left;
 }
 .carRental .car-rental-right-content .commonHeader:after {
   margin: 6px 0;
@@ -207,63 +211,32 @@
   height: 10px;
   margin: 0;
 }
-.carRentImg {
-  position: absolute;
-  width: 1282px;
-  height: 512px;
-  right: 0;
-  top: 347px;
+.autoPark .container {
+  padding: 85px 0 130px 0;
 }
-/*....................................Auto park....................................*/
-#autoPark {
+.autoPark .container .autoParkNav {
+  margin: 54px 0 30px 0;
   text-align: center;
 }
-#autoPark .commonHeader {
-  padding-top: 85px;
-  padding-bottom: 47px;
-  text-align: center;
-}
-#autoParkNav {
-  margin-bottom: 30px;
-}
-#autoParkNav .active {
-  background-color: #00bc65;
-}
-#autoParkNav .active:after {
-  content: '';
-  display: block;
-  width: 0;
-  opacity: 1;
-  border: 10px solid transparent;
-  border-top: 8px solid #00bc65;
-  margin: 8px auto;
-}
-.parkNavItem {
+.autoPark .container .autoParkNav .parkNavItem {
   text-decoration: none;
   text-transform: uppercase;
   font-family: 'HelveticaNeueCyr', sans-serif;
   font-size: 15px;
   line-height: 1.53;
   display: inline-block;
-  border: 2px solid #00bc65;
-  border-radius: 40px;
-  padding: 8px 18px;
   transition: all 0.2s linear;
   color: black;
   width: 155px;
   height: 42px;
   background-color: #f4f4f4;
-  border: none;
   border-radius: 4px;
   padding: 11px 0 0 0;
   box-sizing: border-box;
   margin-right: 2px;
   cursor: pointer;
 }
-.parkNavItem:hover {
-  background-color: #00bc65;
-}
-.parkNavItem:after {
+.autoPark .container .autoParkNav .parkNavItem:after {
   content: '';
   display: block;
   width: 0;
@@ -272,148 +245,142 @@
   border-top: 8px solid #00bc65;
   margin: 8px auto;
 }
-.parkNavItem:hover:after {
+.autoPark .container .autoParkNav .parkNavItem:hover {
+  background-color: #00bc65;
+}
+.autoPark .container .autoParkNav .parkNavItem:hover:after {
   opacity: 1;
 }
-.autoParkCars {
-  display: inline-block;
-  width: 370px;
-  padding: 0 0 64px 0;
+.autoPark .container .autoParkSlideCars {
+  display: flex;
+  justify-content: space-between;
+}
+.autoPark .container .autoParkSlideCars .autoParkCars {
   text-align: left;
-  margin-left: 28px;
 }
-.autoParkCars p {
-  display: inline-block;
-  font-family: 'HelveticaNeueCyr', sans-serif;
-  font-size: 14px;
-  padding-top: 8px;
+.autoPark .container .autoParkSlideCars .autoParkCars .autopark-cars-hover-container {
+  position: relative;
+  width: 370px;
+  height: 260px;
 }
-.autoParkCars .btn {
-  display: inline-block;
-  float: right;
-  margin-top: 15px;
-}
-.autoParkCars:hover .carHoverText {
-  opacity: 1;
-}
-.carHoverText {
+.autoPark .container .autoParkSlideCars .autoParkCars .autopark-cars-hover-container .carHoverText {
   display: block;
   position: absolute;
   background: rgba(0, 0, 0, 0.5);
   opacity: 0;
-  width: 370px;
-  height: 260px;
-  z-index: 5;
+  width: 100%;
+  height: 100%;
   color: white;
   font-family: 'HelveticaNeueCyr', sans-serif;
 }
-.carHoverText h3 {
+.autoPark .container .autoParkSlideCars .autoParkCars .autopark-cars-hover-container .carHoverText h3 {
   font-size: 18px;
   line-height: 1.28;
   text-align: center;
   padding-top: 85px;
   margin: 0;
 }
-.carHoverText p {
-  font-size: 14px;
-  line-height: 1.64;
-  padding: 17px 0 0 128px;
+.autoPark .container .autoParkSlideCars .autoParkCars .autopark-cars-hover-container .carHoverText ul {
   margin: 0;
+  padding: 0;
 }
-.carsImg {
-  width: 370px;
-  height: 260px;
-  z-index: 4;
+.autoPark .container .autoParkSlideCars .autoParkCars .autopark-cars-hover-container .carHoverText ul li {
+  list-style-type: none;
+  font-size: 14px;
+  line-height: 0.64;
+  padding: 17px 0 0 128px;
 }
-.greenText {
+.autoPark .container .autoParkSlideCars .autoParkCars .autopark-cars-hover-container .carsImg {
+  width: 100%;
+  height: 100%;
+}
+.autoPark .container .autoParkSlideCars .autoParkCars:hover .carHoverText {
+  opacity: 1;
+}
+.autoPark .container .autoParkSlideCars .autoParkCars .autopark-cars-bottom-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+}
+.autoPark .container .autoParkSlideCars .autoParkCars .autopark-cars-bottom-items p {
+  font-family: 'HelveticaNeueCyr', sans-serif;
+  font-size: 14px;
+}
+.autoPark .container .autoParkSlideCars .autoParkCars .autopark-cars-bottom-items .greenText {
   color: #00bc65;
   font-size: 24px;
 }
-.autoParkSlideBuses,
-.autoParkSlideMicrobuses,
-.autoParkSlideMinivans,
-.autoParkSlideJeeps,
-.autoParkSlideCars {
-  display: none;
-}
-.autoParkSlideBuses.active,
-.autoParkSlideMicrobuses.active,
-.autoParkSlideMinivans.active,
-.autoParkSlideJeeps.active,
-.autoParkSlideCars.active {
-  display: inline-block;
-}
-#atoParkDescribing {
+.autoPark .container .atoParkDescribing {
+  padding-top: 60px;
   text-align: left;
-  margin: 0 366px 130px 375px;
   font-family: 'HelveticaNeueCyr', sans-serif;
   line-height: 1.53;
 }
-#atoParkDescribing h3 {
+.autoPark .container .atoParkDescribing h3 {
   font-size: 18px;
   font-weight: normal;
 }
-#atoParkDescribing p {
+.autoPark .container .atoParkDescribing p,
+.autoPark .container .atoParkDescribing ul {
   font-size: 15px;
 }
-#atoParkDescribing ul {
-  font-size: 15px;
-}
-/*....................................Online Calculator....................................*/
-#onlineCalculator {
+.onlineCalculator {
   background-color: #f4f4f4;
   text-align: center;
   font-family: 'HelveticaNeueCyr', sans-serif;
 }
-#onlineCalculator .commonHeader {
-  padding: 74px 0 40px 0;
+.onlineCalculator .container {
+  padding-top: 74px;
 }
-#onlineCalculator:after {
-  content: '';
-  display: block;
-  height: 64px;
-  background-color: white;
-  margin-top: -64px;
+.onlineCalculator .container .commonHeader {
+  padding-bottom: 40px;
 }
-#calcLeftContent,
-#calcRightContent {
-  display: inline-block;
+.onlineCalculator .container .calc-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
 }
-#calcLeftContent {
-  width: 518px;
+.onlineCalculator .container .calc-content .calcLeftContent {
+  max-width: 518px;
   text-align: left;
   font-size: 15px;
   line-height: 1.53;
-  padding-bottom: 20px;
 }
-#calcRightContent {
+.onlineCalculator .container .calc-content .calcLeftContent p:first-child {
+  margin-top: 0;
+}
+.onlineCalculator .container .calc-content .calcRightContent {
   width: 585px;
   background-color: #00bc65;
-  margin-left: 64px;
-  vertical-align: top;
-  text-align: left;
-  padding-left: 150px;
   box-sizing: border-box;
+  text-align: center;
+  padding-top: 40px;
+  position: relative;
 }
-#calcRightContent h3 {
+.onlineCalculator .container .calc-content .calcRightContent .calc-rightcontent-header {
   font-size: 20px;
   line-height: 1.15;
-  margin-top: 41px;
-  margin-left: -70px;
 }
-#calcRightContent input,
-#calcRightContent select {
+.onlineCalculator .container .calc-content .calcRightContent .calcRightContText {
+  font-size: 15px;
+  line-height: 1.53;
+  margin: 28px 0 2px 0;
+}
+.onlineCalculator .container .calc-content .calcRightContent input,
+.onlineCalculator .container .calc-content .calcRightContent select {
   display: block;
   width: 288px;
+  margin: 0 auto;
 }
-#calcRightContent #calcRange {
+.onlineCalculator .container .calc-content .calcRightContent #calcRange {
   -webkit-appearance: none;
   border-radius: 100px;
   height: 8px;
   background: -webkit-linear-gradient(left, #242b33 0, #242b33 33%, white 33%, white 100%);
   outline: none;
 }
-#calcRightContent #calcRange::-webkit-slider-thumb {
+.onlineCalculator .container .calc-content .calcRightContent #calcRange::-webkit-slider-thumb {
   -webkit-appearance: none;
   background: white;
   width: 20px;
@@ -422,7 +389,7 @@
   border-radius: 50%;
   cursor: pointer;
 }
-#calcRightContent #calcRange::-moz-range-thumb {
+.onlineCalculator .container .calc-content .calcRightContent #calcRange::-moz-range-thumb {
   -moz-appearance: none;
   background: white;
   width: 20px;
@@ -431,34 +398,29 @@
   border-radius: 50%;
   cursor: pointer;
 }
-#calcRightContent select {
+.onlineCalculator .container .calc-content .calcRightContent select {
   height: 30px;
   border: none;
   border-radius: 4px;
   margin-bottom: 76px;
   font-size: 15px;
 }
-#calcRightContent p:nth-child(3) {
+.onlineCalculator .container .calc-content .calcRightContent p:nth-child(3) {
   padding-right: 68px;
 }
-#calcRightContent p:nth-child(4) {
+.onlineCalculator .container .calc-content .calcRightContent p:nth-child(4) {
   padding-right: 63px;
 }
-#calcRightContent p:nth-child(5) {
+.onlineCalculator .container .calc-content .calcRightContent p:nth-child(5) {
   padding-right: 52px;
 }
-.calcRightContText {
-  font-size: 15px;
-  line-height: 1.53;
-  margin: 28px 0 2px 0;
-}
-.calcNumbPassengers {
+.onlineCalculator .container .calc-content .calcRightContent .calcNumbPassengers {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 12px;
   line-height: 1;
   display: inline-block;
 }
-#calcSubmit {
+.onlineCalculator .container .calc-content .calcRightContent #calcSubmit {
   text-decoration: none;
   text-transform: uppercase;
   font-family: 'HelveticaNeueCyr', sans-serif;
@@ -469,108 +431,116 @@
   border-radius: 40px;
   padding: 8px 18px;
   transition: all 0.2s linear;
+  box-sizing: border-box;
   width: 259px;
   background-color: #242b33;
   color: white;
   cursor: pointer;
-  margin: 0 0 42px 13px;
 }
-#calcSubmit:hover {
-  background-color: #00bc65;
-}
-#calcSubmit:hover {
+.onlineCalculator .container .calc-content .calcRightContent #calcSubmit:hover {
   background-color: white;
   color: #00bc65;
 }
-/*....................................Advantages ....................................*/
-#advantages {
+.onlineCalculator .container .calc-content .calcRightContent:after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 60px;
+  background-color: #00bc65;
+}
+.advantages .container {
+  padding: 208px 0 130px 0;
+}
+.advantages .container .advantagesDescription {
   text-align: center;
-}
-#advantages .commonHeader {
-  padding-top: 139px;
-}
-#advantagesDescription {
   font-family: 'HelveticaNeueCyr', sans-serif;
   font-size: 15px;
   line-height: 1.53;
   padding-bottom: 74px;
-  width: 1162px;
+  max-width: 1162px;
   margin: auto;
 }
-.advantagesFeatures {
+.advantages .container .advantages-features {
+  display: flex;
+  justify-content: space-between;
+}
+.advantages .container .advantages-features .advantagesFeature {
   vertical-align: top;
-  display: inline-block;
-  width: 340px;
+  max-width: 340px;
   text-align: left;
   font-family: 'HelveticaNeueCyr', sans-serif;
-  margin-right: 66px;
-  padding-bottom: 120px;
 }
-.advantagesFeatures:last-child {
-  margin-right: 0;
-}
-.advantagesFeatures img {
+.advantages .container .advantages-features .advantagesFeature img {
   width: 76px;
   height: 76px;
   float: left;
 }
-.advantagesFeatures h4 {
+.advantages .container .advantages-features .advantagesFeature h4 {
   font-size: 18px;
   line-height: 1.1;
   margin: 0;
   font-weight: normal;
   padding-left: 100px;
 }
-.advantagesFeatures ul {
+.advantages .container .advantages-features .advantagesFeature ul {
   padding-left: 130px;
   font-size: 15px;
   line-height: 1.73;
 }
-/*....................................Transport order ....................................*/
-#transportOrder {
+.transportOrder {
   background-color: #242b33;
-  text-align: center;
-  padding-bottom: 209px;
 }
-#transportOrder .commonHeader {
-  padding: 94px 0 96px 0;
+.transportOrder .container {
+  padding: 94px 0 220px 0;
+  display: block;
+}
+.transportOrder .container .commonHeader {
   color: white;
 }
-#transportOrder input:focus {
-  outline: none;
+.transportOrder .container .order-form {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
 }
-#orderClientName,
-#orderClientPhone {
+.transportOrder .container .order-form .order-block-input {
+  position: relative;
+  width: 433px;
+  height: 40px;
+  padding-top: 80px;
+}
+.transportOrder .container .order-form .order-block-input .client-input-data {
   font-family: 'HelveticaNeueCyr', sans-serif;
   font-size: 14px;
   color: gray;
-  display: inline-block;
   position: absolute;
-  margin-top: -8px;
-  margin-left: -500px;
   transition: all 0.6s ease;
+  top: 0;
+  margin: 0;
+  padding-top: 75px;
 }
-#orderFormName,
-#orderFormPhone {
-  width: 433px;
-  height: 40px;
+.transportOrder .container .order-form .order-block-input:hover .client-input-data {
+  padding-top: 55px;
+  font-size: 10px;
+  color: dimgray;
+}
+.transportOrder .container .order-form .order-block-input input:focus {
+  outline: none;
+}
+.transportOrder .container .order-form .order-block-input #orderFormName,
+.transportOrder .container .order-form .order-block-input #orderFormPhone {
+  width: 100%;
+  height: 100%;
   color: white;
   font-size: 18px;
   font-family: 'HelveticaNeueCyr', sans-serif;
   background-color: #242b33;
-  margin-right: 65px;
   border-top: none;
   border-right: none;
   border-left: none;
 }
-#orderFormName:hover + #orderClientName,
-#orderFormPhone:hover + #orderClientPhone {
-  font-size: 10px;
-  color: dimgray;
-  margin-top: -20px;
-}
-#orderSubmit {
-  text-decoration: none;
+.transportOrder .container .order-form #orderSubmit {
+  width: 183px;
   text-transform: uppercase;
   font-family: 'HelveticaNeueCyr', sans-serif;
   font-size: 15px;
@@ -579,58 +549,44 @@
   border-radius: 40px;
   padding: 8px 18px;
   transition: all 0.2s linear;
-  width: 259px;
-  background-color: #242b33;
+  box-sizing: border-box;
   color: white;
   cursor: pointer;
-  margin: 0 0 42px 13px;
-  width: 183px;
-  margin: 0;
-  display: inline-block;
-  vertical-align: bottom;
+  background-color: transparent;
 }
-#orderSubmit:hover {
-  background-color: #00bc65;
-}
-#orderSubmit:hover {
-  background-color: white;
-  color: #00bc65;
-}
-#orderSubmit:hover {
+.transportOrder .container .order-form #orderSubmit:hover {
   background-color: #00bc65;
   color: white;
 }
-/*....................................Testimonials....................................*/
-#testimonials {
+.testimonials {
   text-align: center;
   background-color: #f4f4f4;
   padding-top: 139px;
 }
-#testimonials:after {
-  content: '';
-  display: block;
-  background-color: white;
-  height: 48px;
-  margin-top: -48px;
+.testimonials .container {
+  display: flex;
+  justify-content: space-between;
 }
-#testimonLeftContent,
-#testimonRightContent {
-  display: inline-block;
-  vertical-align: top;
-}
-#testimonLeftContent {
-  width: 502px;
+.testimonials .container .testimonLeftContent {
+  max-width: 502px;
   text-align: left;
-  margin-right: 82px;
 }
-#testimonLeftContent .commonHeader {
-  margin-bottom: 70px;
+.testimonials .container .testimonLeftContent .commonHeader {
+  position: relative;
+  text-align: left;
 }
-#testimonLeftContent .commonHeader:after {
-  margin: 6px 0;
+.testimonials .container .testimonLeftContent .commonHeader:after {
+  position: absolute;
+  left: 0;
 }
-#sliderBtnLeft,
-#sliderBtnRight {
+.testimonials .container .testimonLeftContent .testimDescription {
+  font-family: 'HelveticaNeueCyr', sans-serif;
+  font-size: 15px;
+  line-height: 1.53;
+  padding-top: 70px;
+}
+.testimonials .container .testimonLeftContent .sliderBtnLeft,
+.testimonials .container .testimonLeftContent .sliderBtnRight {
   display: inline-block;
   border: 2px solid #00bc65;
   width: 40px;
@@ -640,65 +596,59 @@
   transition: all 0.2s linear;
   cursor: pointer;
 }
-#sliderBtnLeft img,
-#sliderBtnRight img {
+.testimonials .container .testimonLeftContent .sliderBtnLeft img,
+.testimonials .container .testimonLeftContent .sliderBtnRight img {
   margin: 14px;
   width: 14px;
   height: 10px;
 }
-#sliderBtnLeft:hover,
-#sliderBtnRight:hover {
+.testimonials .container .testimonLeftContent .sliderBtnLeft:hover,
+.testimonials .container .testimonLeftContent .sliderBtnRight:hover {
   background-color: #00bc65;
 }
-#testimonRightContent {
-  width: 585px;
-  height: 408px;
+.testimonials .container .testimonRightContent {
+  max-width: 585px;
   background-color: #00bc65;
-  padding: 36px 37px 58px 46px;
   box-sizing: border-box;
+  position: relative;
 }
-#testimonRightContent img {
+.testimonials .container .testimonRightContent img {
+  margin-top: 36px;
   width: 44.6px;
   height: 37.7px;
 }
-#testimDescription {
-  font-family: 'HelveticaNeueCyr', sans-serif;
-  font-size: 15px;
-  line-height: 1.53;
+.testimonials .container .testimonRightContent .testimSlide {
+  padding: 0 37px 0 46px;
 }
-.testimClientName {
+.testimonials .container .testimonRightContent .testimSlide .testimClientName {
   font-family: 'HelveticaNeueCyr', sans-serif;
   font-size: 18px;
-  line-height: 1.28;
+  line-height: 3;
 }
-.clientTestimonial {
+.testimonials .container .testimonRightContent .testimSlide .clientTestimonial {
   font-family: 'HelveticaNeueCyr', sans-serif;
   font-size: 15px;
   line-height: 1.53;
 }
-.testimSlide {
-  opacity: 0;
+.testimonials .container .testimonRightContent:after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 58px;
+  position: absolute;
+  background-color: #00bc65;
 }
-.testimSlide.active {
-  opacity: 1;
+.rentDescribing .container {
+  padding: 200px 0 100px 0;
 }
-/*....................................Rental describing....................................*/
-#rentDescribing {
-  text-align: center;
-  margin-bottom: 110px;
-}
-#rentDescribing .commonHeader {
-  padding: 156px 0 52px 0;
-}
-#renDescrContent {
+.rentDescribing .container #renDescrContent {
   font-family: 'HelveticaNeueCyr', sans-serif;
   font-size: 15px;
   line-height: 1.53;
   text-align: left;
-  width: 1174px;
-  margin: 0 auto;
+  max-width: 1174px;
 }
-#renDescrContent h3 {
+.rentDescribing .container #renDescrContent h3 {
   font-weight: normal;
   font-size: 18px;
   line-height: 1.1;

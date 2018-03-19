@@ -1,0 +1,7 @@
+Вопросы:
+1) В header стоит ли использовать flex для выравнивания .headerNav 
+
+2) В блоке car-rental car-rental-left-content и car-rental-right-content нужно ли им задавать width
+3) В блоке car-rental Как быть с SVG иконками при навидении?
+
+4) 

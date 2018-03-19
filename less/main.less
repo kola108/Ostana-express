@@ -28,6 +28,8 @@
   border-radius: 40px;
   padding: 8px 18px;
   transition: all 0.2s linear;
+  color: black;
+  box-sizing: border-box;
   &:hover{
     background-color: @greenColor;
   }
@@ -39,6 +41,7 @@
   letter-spacing: 1px;
   text-transform: uppercase;
   margin: 0;
+  text-align: center;
   &:after{
     content: '';
     display: block;
@@ -46,17 +49,16 @@
     height: 2px;
     border-bottom: 3px solid @greenColor;
     margin: 6px auto;
-
   }
 }
-
-/*....................................HEADER....................................*/
+.container{
+  max-width: 1175px;
+  margin: 0 auto;
+}
 
 .header{
   background-color: @blackColor;
-  .header-container{
-    margin: 0 auto;
-    max-width: 1178px;
+  .container{
     max-height: 205px;
     display: flex;
     justify-content: space-between;
@@ -112,11 +114,6 @@
   }
 }
 
-
-
-/*....................................Car Rental....................................*/
-
-
 .carRental{
   background-color: @grayColor;
   .car-rental-header{
@@ -132,6 +129,7 @@
   }
   .car-rental-left-content{
     padding-top: 92px;
+    //max-width: 675px;
     width: 675px;
     display: inline-block;
     .rentalTab{
@@ -190,6 +188,7 @@
   .car-rental-right-content{
     padding: 92px 0 92px 80px;
     position: relative;
+    //max-width: 1144px;
     width: 1144px;
     background: url("../img/carRentImg1.png");
     background-repeat: no-repeat;
@@ -198,9 +197,10 @@
     text-align: left;
     margin: 0;
     display: inline-block;
-     .commonHeader{
+    .commonHeader{
       width: 331px;
       display: block;
+      text-align: left;
       &:after{
         margin: 6px 0;
       }
@@ -227,436 +227,433 @@
     }
   }
 }
-.carRentImg{
-  position: absolute;
-  width: 1282px;
-  height: 512px;
-  right: 0;
-  top: 347px;
-}
 
-/*....................................Auto park....................................*/
-
-#autoPark{
-  text-align: center;
-  .commonHeader{
-    padding-top: 85px;
-    padding-bottom: 47px;
-    text-align: center;
+.autoPark{
+  .container{
+    padding: 85px 0 130px 0;
+    .autoParkNav{
+      margin: 54px 0 30px 0;
+      text-align: center;
+      .parkNavItem{
+        text-decoration: none;
+        text-transform: uppercase;
+        font-family: @helvetica;
+        font-size: 15px;
+        line-height: 1.53;
+        display: inline-block;
+        transition: all 0.2s linear;
+        color: black;
+        width: 155px;
+        height: 42px;
+        background-color: @grayColor;
+        border-radius: 4px;
+        padding: 11px 0 0 0;
+        box-sizing: border-box;
+        margin-right: 2px;
+        cursor: pointer;
+        &:after{
+          content: '';
+          display: block;
+          width: 0;
+          opacity: 0;
+          border: 10px solid transparent;
+          border-top: 8px solid @greenColor;
+          margin: 8px auto;
+        }
+        &:hover{
+          background-color: @greenColor;
+          &:after{opacity: 1;}
+        }
+      }
+    }
+    .autoParkSlideCars{
+      display: flex;
+      justify-content: space-between;
+      .autoParkCars{
+        text-align: left;
+        .autopark-cars-hover-container{
+          position: relative;
+          width: 370px;
+          height: 260px;
+          .carHoverText{
+            display: block;
+            position: absolute;
+            background: rgba(0, 0, 0, 0.5);
+            opacity: 0;
+            width: 100%;
+            height: 100%;
+            color: white;
+            font-family: @helvetica;
+            h3{
+              font-size: 18px;
+              line-height: 1.28;
+              text-align: center;
+              padding-top: 85px;
+              margin: 0;
+            }
+            ul{
+              margin: 0;
+              padding: 0;
+              li{
+                list-style-type: none;
+                font-size: 14px;
+                line-height: 0.64;
+                padding: 17px 0 0 128px;
+              }
+            }
+          }
+          .carsImg{
+            width: 100%;
+            height: 100%;
+          }
+        }
+        &:hover .carHoverText{opacity: 1}
+        .autopark-cars-bottom-items{
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding-top: 10px;
+          p{
+            font-family: @helvetica;
+            font-size: 14px;
+          }
+          .greenText{
+            color: @greenColor;
+            font-size: 24px;
+          }
+        }
+      }
+    }
+    .atoParkDescribing{
+      padding-top: 60px;
+      text-align: left;
+      font-family: @helvetica;
+      line-height: 1.53;
+      h3{font-size: 18px; font-weight: normal;}
+      p, ul{font-size: 15px;}
+    }
   }
 }
-#autoParkNav{
-  margin-bottom: 30px;
-    .active{
-    background-color:@greenColor;
-     &:after {
-       content: '';
-       display: block;
-       width: 0;
-       opacity: 1;
-       border: 10px solid transparent;
-       border-top: 8px solid @greenColor;
-       margin: 8px auto;
-     }
-  }
-}
-.parkNavItem{
-  .btn;
-  color: black;
-  width: 155px;
-  height: 42px;
-  background-color: @grayColor;
-  border: none;
-  border-radius: 4px;
-  padding: 11px 0 0 0;
-  box-sizing: border-box;
-  margin-right: 2px;
-  cursor: pointer;
-  &:after{
-    content: '';
-    display: block;
-    width: 0;
-    opacity: 0;
-    border: 10px solid transparent;
-    border-top: 8px solid @greenColor;
-    margin: 8px auto;
-  }
-  &:hover:after{opacity: 1;}
-}
-.autoParkCars{
-  display: inline-block;
-  width: 370px;
-  padding: 0 0 64px 0;
-  text-align: left;
-  margin-left: 28px;
-  p{
-    display: inline-block;
-    font-family: @helvetica;
-    font-size: 14px;
-    padding-top: 8px;
-  }
-  .btn{
-    display: inline-block;
-    float: right;
-    margin-top: 15px;
-  }
-  &:hover .carHoverText{opacity: 1}
-}
 
-.carHoverText{
-  display: block;
-  position: absolute;
-  background: rgba(0, 0, 0, 0.5);
-  opacity: 0;
-  width: 370px;
-  height: 260px;
-  z-index: 5;
-  color: white;
-  font-family: @helvetica;
-  h3{
-    font-size: 18px;
-    line-height: 1.28;
-    text-align: center;
-    padding-top: 85px;
-    margin: 0;
-  }
-  p{
-    font-size: 14px;
-    line-height: 1.64;
-    padding: 17px 0 0 128px;
-    margin: 0;
-  }
-}
-.carsImg{
-  width: 370px;
-  height: 260px;
-  z-index: 4;
-}
-.greenText{
-  color: @greenColor;
-  font-size: 24px;
-}
-
-.autoParkSlideBuses,
-.autoParkSlideMicrobuses,
-.autoParkSlideMinivans	,
-.autoParkSlideJeeps,
-.autoParkSlideCars{
-  display: none;
-}
-.autoParkSlideBuses.active,
-.autoParkSlideMicrobuses.active,
-.autoParkSlideMinivans.active,
-.autoParkSlideJeeps.active,
-.autoParkSlideCars.active{
-  display: inline-block;
-}
-
-#atoParkDescribing{
-  text-align: left;
-  margin: 0 366px 130px 375px;
-  font-family: @helvetica;
-  line-height: 1.53;
-  h3{font-size: 18px; font-weight: normal;}
-  p{font-size: 15px;}
-  ul{font-size: 15px;}
-}
-
-/*....................................Online Calculator....................................*/
-
-#onlineCalculator{
+.onlineCalculator{
   background-color: @grayColor;
   text-align: center;
   font-family: @helvetica;
-  .commonHeader{
-    padding: 74px 0 40px 0;
+  .container{
+    padding-top: 74px;
+    .commonHeader{padding-bottom: 40px;}
+    .calc-content{
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      .calcLeftContent{
+        max-width: 518px;
+        text-align: left;
+        font-size: 15px;
+        line-height: 1.53;
+        p:first-child{margin-top: 0;}
+      }
+      .calcRightContent{
+        //max-width: 585px;
+        width: 585px;
+        background-color: @greenColor;
+        box-sizing: border-box;
+        text-align: center;
+        padding-top: 40px;
+        position: relative;
+        .calc-rightcontent-header{
+          font-size: 20px;
+          line-height: 1.15;
+        }
+        .calcRightContText{
+          font-size: 15px;
+          line-height: 1.53;
+          margin: 28px 0 2px 0;
+        }
+        input, select{
+          display: block;
+          width: 288px;
+          margin: 0 auto;
+        }
+        #calcRange{
+          -webkit-appearance: none;
+          border-radius: 100px;
+          height: 8px;
+          background: -webkit-linear-gradient(left, #242b33 0, #242b33 33%, white 33%, white 100%);
+          outline: none;
+        }
+        #calcRange::-webkit-slider-thumb{
+          -webkit-appearance: none;
+          background: white;
+          width: 20px;
+          height: 20px;
+          box-shadow: 0 2px 4px 0 rgba(140, 140, 140, 0.3), 0 -2px 4px 0 rgba(140, 140, 140, 0.2);
+          border-radius: 50%;
+          cursor: pointer;
+        }
+        #calcRange::-moz-range-thumb{
+          -moz-appearance: none;
+          background: white;
+          width: 20px;
+          height: 20px;
+          box-shadow: 0 2px 4px 0 rgba(140, 140, 140, 0.3), 0 -2px 4px 0 rgba(140, 140, 140, 0.2);
+          border-radius: 50%;
+          cursor: pointer;
+        }
+        select{
+          height: 30px;
+          border: none;
+          border-radius: 4px;
+          margin-bottom: 76px;
+          font-size: 15px;
+        }
+        p:nth-child(3){padding-right: 68px;}
+        p:nth-child(4){padding-right: 63px;}
+        p:nth-child(5){padding-right: 52px;}
+        .calcNumbPassengers{
+          font-family: @sourceSans;
+          font-size: 12px;
+          line-height: 1;
+          display: inline-block;
+        }
+        #calcSubmit{
+          text-decoration: none;
+          text-transform: uppercase;
+          font-family: @helvetica;
+          font-size: 15px;
+          line-height: 1.53;
+          display: inline-block;
+          border: 2px solid @greenColor;
+          border-radius: 40px;
+          padding: 8px 18px;
+          transition: all 0.2s linear;
+          box-sizing: border-box;
+          width: 259px;
+          background-color: @blackColor;
+          color: white;
+          cursor: pointer;
+          &:hover{
+            background-color: white;
+            color: @greenColor;
+          }
+        }
+        &:after{
+          content: '';
+          position: absolute;
+          display: block;
+          width: 100%;
+          height: 60px;
+          background-color: @greenColor;
+        }
+      }
+    }
   }
-  &:after{
-    content: '';
+}
+
+.advantages{
+  .container{
+    padding: 208px 0 130px 0;
+    .advantagesDescription{
+      text-align: center;
+      font-family: @helvetica;
+      font-size: 15px;
+      line-height: 1.53;
+      padding-bottom: 74px;
+      max-width: 1162px;
+      margin: auto;
+    }
+    .advantages-features{
+      display: flex;
+      justify-content: space-between;
+      .advantagesFeature{
+        vertical-align: top;
+        max-width: 340px;
+        text-align: left;
+        font-family: @helvetica;
+        img{
+          width: 76px;
+          height: 76px;
+          float: left;
+        }
+        h4{
+          font-size: 18px;
+          line-height: 1.1;
+          margin: 0;
+          font-weight: normal;
+          padding-left: 100px;
+        }
+        ul{
+          padding-left: 130px;
+          font-size: 15px;
+          line-height: 1.73;
+        }
+      }
+    }
+  }
+}
+
+.transportOrder{
+  background-color: @blackColor;
+  .container{
+    padding: 94px 0 220px 0;
     display: block;
-    height: 64px;
-    background-color: white;
-    margin-top: -64px;
-  }
-}
-#calcLeftContent, #calcRightContent{
-  display: inline-block;
-}
-#calcLeftContent{
-  width: 518px;
-  text-align: left;
-  font-size: 15px;
-  line-height: 1.53;
-  padding-bottom: 20px;
-}
-#calcRightContent{
-  width: 585px;
-  background-color: @greenColor;
-  margin-left: 64px;
-  vertical-align: top;
-  text-align: left;
-  padding-left: 150px;
-  box-sizing: border-box;
-  h3{
-    font-size: 20px;
-    line-height: 1.15;
-    margin-top: 41px;
-    margin-left: -70px;
-  }
-  input, select{
-    display: block;
-    width: 288px;
-  }
-  #calcRange{
-    -webkit-appearance: none;
-    border-radius: 100px;
-    height: 8px;
-    background: -webkit-linear-gradient(left, #242b33 0, #242b33 33%, white 33%, white 100%);
-    outline: none;
-  }
-  #calcRange::-webkit-slider-thumb{
-    -webkit-appearance: none;
-    background: white;
-    width: 20px;
-    height: 20px;
-    box-shadow: 0 2px 4px 0 rgba(140, 140, 140, 0.3), 0 -2px 4px 0 rgba(140, 140, 140, 0.2);
-    border-radius: 50%;
-    cursor: pointer;
-  }
-  #calcRange::-moz-range-thumb{
-    -moz-appearance: none;
-    background: white;
-    width: 20px;
-    height: 20px;
-    box-shadow: 0 2px 4px 0 rgba(140, 140, 140, 0.3), 0 -2px 4px 0 rgba(140, 140, 140, 0.2);
-    border-radius: 50%;
-    cursor: pointer;
-  }
-  select{
-    height: 30px;
-    border: none;
-    border-radius: 4px;
-    margin-bottom: 76px;
-    font-size: 15px;
-  }
-  p:nth-child(3){padding-right: 68px;}
-  p:nth-child(4){padding-right: 63px;}
-  p:nth-child(5){padding-right: 52px;}
-
-}
-.calcRightContText{
-  font-size: 15px;
-  line-height: 1.53;
-  margin: 28px 0 2px 0;
-}
-.calcNumbPassengers{
-  font-family: @sourceSans;
-  font-size: 12px;
-  line-height: 1;
-  display: inline-block;
-}
-#calcSubmit{
-  .btn;
-  width: 259px;
-  background-color: @blackColor;
-  color: white;
-  cursor: pointer;
-  margin: 0 0 42px 13px;
-  &:hover{
-    background-color: white;
-    color: @greenColor;
+    .commonHeader{color: white;}
+    .order-form{
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      .order-block-input{
+        position: relative;
+        width: 433px;
+        height: 40px;
+        padding-top: 80px;
+        .client-input-data{
+          font-family: @openSans;
+          font-size: 14px;
+          color: gray;
+          position: absolute;
+          transition: all 0.6s ease;
+          top: 0;
+          margin: 0;
+          padding-top: 75px;
+        }
+        &:hover{
+          .client-input-data{
+            padding-top: 55px;
+            font-size: 10px;
+            color: dimgray;
+          }
+        }
+        input:focus{outline: none;}
+        #orderFormName, #orderFormPhone{
+          width: 100%;
+          height: 100%;
+          color: white;
+          font-size: 18px;
+          font-family: @openSans;
+          background-color: @blackColor;
+          border-top: none;
+          border-right: none;
+          border-left: none;
+        }
+      }
+      #orderSubmit{
+        width: 183px;
+        text-transform: uppercase;
+        font-family: @helvetica;
+        font-size: 15px;
+        line-height: 1.53;
+        border: 2px solid @greenColor;
+        border-radius: 40px;
+        padding: 8px 18px;
+        transition: all 0.2s linear;
+        box-sizing: border-box;
+        color: white;
+        cursor: pointer;
+        background-color: transparent;
+        &:hover{
+          background-color: @greenColor;
+          color: white;
+        }
+      }
+    }
   }
 }
 
-/*....................................Advantages ....................................*/
-
-#advantages{
-  text-align: center;
-  .commonHeader{padding-top: 139px;}
-}
-#advantagesDescription{
-  font-family: @helvetica;
-  font-size: 15px;
-  line-height: 1.53;
-  padding-bottom: 74px;
-  width: 1162px;
-  margin: auto;
-}
-.advantagesFeatures{
-  vertical-align: top;
-  display: inline-block;
-  width: 340px;
-  text-align: left;
-  font-family: @helvetica;
-  margin-right: 66px;
-  padding-bottom: 120px;
-  &:last-child{margin-right: 0;}
-  img{
-    width: 76px;
-    height: 76px;
-    float: left;
-  }
-  h4{
-    font-size: 18px;
-    line-height: 1.1;
-    margin: 0;
-    font-weight: normal;
-    padding-left: 100px;
-  }
-  ul{
-    padding-left: 130px;
-    font-size: 15px;
-    line-height: 1.73;
-  }
-}
-
-/*....................................Transport order ....................................*/
-
-#transportOrder{
-  background-color: @blackColor;
-  text-align: center;
-  padding-bottom: 209px;
-  .commonHeader{
-    padding: 94px 0 96px 0;
-    color: white;
-  }
-  input:focus{outline: none;}
-}
-
-#orderClientName, #orderClientPhone{
-  font-family: @openSans;
-  font-size: 14px;
-  color: gray;
-  display: inline-block;
-  position: absolute;
-  margin-top: -8px;
-  margin-left: -500px;
-  transition: all 0.6s ease;
-}
-#orderFormName, #orderFormPhone{
-  width: 433px;
-  height: 40px;
-  color: white;
-  font-size: 18px;
-  font-family: @openSans;
-  background-color: @blackColor;
-  margin-right: 65px;
-  border-top: none;
-  border-right: none;
-  border-left: none;
-}
-#orderFormName:hover+#orderClientName, #orderFormPhone:hover+#orderClientPhone{
-  font-size: 10px;
-  color: dimgray;
-  margin-top: -20px;
-}
-#orderSubmit{
-  #calcSubmit;
-  width: 183px;
-  margin: 0;
-  display: inline-block;
-  vertical-align: bottom;
-  &:hover{
-    background-color: @greenColor;
-    color: white;
-  }
-}
-
-/*....................................Testimonials....................................*/
-#testimonials{
+.testimonials{
   text-align: center;
   background-color: @grayColor;
   padding-top: 139px;
-  &:after{
-    content: '';
-    display: block;
-    background-color: white;
-    height: 48px;
-    margin-top: -48px;
+  .container{
+    display: flex;
+    justify-content: space-between;
+    .testimonLeftContent{
+      max-width: 502px;
+      text-align: left;
+      .commonHeader{
+        position: relative;
+        text-align: left;
+        &:after{
+          position: absolute;
+          left: 0;
+        }
+      }
+      .testimDescription{
+        font-family: @helvetica;
+        font-size: 15px;
+        line-height: 1.53;
+        padding-top: 70px;
+      }
+      .sliderBtnLeft, .sliderBtnRight{
+        display: inline-block;
+        border: 2px solid @greenColor;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        margin-top: 34px;
+        transition: all 0.2s linear;
+        cursor: pointer;
+        img{
+          margin: 14px;
+          width: 14px;
+          height: 10px;
+        }
+        &:hover{background-color: @greenColor;}
+      }
+    }
+    .testimonRightContent{
+      max-width: 585px;
+      background-color: @greenColor;
+      box-sizing: border-box;
+      position: relative;
+      img{
+        margin-top: 36px;
+        width: 44.6px;
+        height: 37.7px;
+      }
+      .testimSlide{
+        padding: 0 37px 0 46px;
+        .testimClientName{
+          font-family: @helvetica;
+          font-size: 18px;
+          line-height: 3;
+        }
+        .clientTestimonial{
+          font-family: @helvetica;
+          font-size: 15px;
+          line-height: 1.53;
+        }
+      }
+      &:after{
+        content: '';
+        display: block;
+        width: 100%;
+        height: 58px;
+        position: absolute;
+        background-color: @greenColor;
+      }
+    }
   }
-}
-#testimonLeftContent, #testimonRightContent{
-  display: inline-block;
-  vertical-align: top;
-}
-#testimonLeftContent{
-  width: 502px;
-  text-align: left;
-  margin-right: 82px;
-  .commonHeader{
-    &:after{margin: 6px 0}
-    margin-bottom: 70px;
-  }
-}
-#sliderBtnLeft, #sliderBtnRight{
-  display: inline-block;
-  border: 2px solid @greenColor;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  margin-top: 34px;
-  transition: all 0.2s linear;
-  cursor: pointer;
-  img{
-    margin: 14px;
-    width: 14px;
-    height: 10px;
-  }
-  &:hover{background-color: @greenColor;}
-}
-#testimonRightContent{
-  width: 585px;
-  height: 408px;
-  background-color: @greenColor;
-  padding: 36px 37px 58px 46px;
-  box-sizing: border-box;
-  img{
-    width: 44.6px;
-    height: 37.7px;
-  }
-}
-#testimDescription{
-  font-family: @helvetica;
-  font-size: 15px;
-  line-height: 1.53;
-}
-.testimClientName{
-  font-family: @helvetica;
-  font-size: 18px;
-  line-height: 1.28;
-}
-.clientTestimonial{
-  #testimDescription;
-}
-.testimSlide{
-  opacity: 0;
-}
-.testimSlide.active{
-  opacity: 1;
 }
 
-/*....................................Rental describing....................................*/
+.rentDescribing{
+  .container{
+    padding: 200px 0 100px 0;
+    #renDescrContent{
+      font-family: @helvetica;
+      font-size: 15px;
+      line-height: 1.53;
+      text-align: left;
+      max-width: 1174px;
+      h3{
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 1.1;
+      }
+    }
+  }
+}
 
-#rentDescribing{
-  text-align: center;
-  margin-bottom: 110px;
-  .commonHeader{
-    padding: 156px 0 52px 0;
-  }
-}
-#renDescrContent{
-  font-family: @helvetica;
-  font-size: 15px;
-  line-height: 1.53;
-  text-align: left;
-  width: 1174px;
-  margin: 0 auto;
-  h3{
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 1.1;
-  }
-}
 
 /*....................................Blog....................................*/
 

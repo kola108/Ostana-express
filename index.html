@@ -15,10 +15,8 @@
 </head>
 <body>
 
-<!--....................................Header....................................-->
-
     <header class="header">
-        <div class="header-container">
+        <div class="container">
             <div class="header-left-content">
                 <img class="logo" src="img/logo.png" alt="Logotype">
             </div>
@@ -29,19 +27,17 @@
                 </div>
                 <nav class="headerNav">
                     <a class="headerNavItem defaultNavitem active" href="#">О компании</a>
-                    <a class="headerNavItem" href="#carRental">Услуги</a>
-                    <a class="headerNavItem" href="#autoPark">Автопарк</a>
-                    <a class="headerNavItem" href="#onlineCalculator">Тарифы</a>
-                    <a class="headerNavItem" href="#blog">Блог</a>
-                    <a class="headerNavItem" href="#testimonials">Отзывы</a>
-                    <a class="headerNavItem" href="#contacts">Контакты</a>
+                    <a class="headerNavItem" href="#">Услуги</a>
+                    <a class="headerNavItem" href="#">Автопарк</a>
+                    <a class="headerNavItem" href="#">Тарифы</a>
+                    <a class="headerNavItem" href="#">Блог</a>
+                    <a class="headerNavItem" href="#">Отзывы</a>
+                    <a class="headerNavItem" href="#">Контакты</a>
                     <a class="btn" href="#">Заказать транспорт</a>
                 </nav>
             </div>
         </div>
     </header>
-
-<!--....................................Car Rental....................................-->
 
     <div class="carRental">
         <h1 class="car-rental-header">Прокат автомобилей в Астане</h1>
@@ -107,447 +103,283 @@
         </div>
     </div>
 
-<!--....................................Auto park....................................-->
+    <div class="autoPark">
+        <div class="container">
+            <h2 class="commonHeader">Автопарк</h2>
+            <nav class="autoParkNav">
+                <div class="parkNavItem" id="linkBuses">Автобусы</div>
+                <div class="parkNavItem" id="linkMicrobuses">Микроавтобусы</div>
+                <div class="parkNavItem" id="linkMinivans">Минивэны</div>
+                <div class="parkNavItem" id="linkJeeps">Внедорожники</div>
+                <div class="parkNavItem active" id="linkCars">Легковые авто</div>
+            </nav>
+            <div class="autoParkSlideCars active">
+                <div class="autoParkCars">
+                    <div class="autopark-cars-hover-container">
+                        <div class="carHoverText">
+                            <h3>Mercedes Benz Gelandewagen</h3>
+                            <ul>
+                                <li>Год выпуска: 2014 г.</li>
+                                <li>Цвет: черный</li>
+                                <li>Кол-во мест: 3</li>
+                            </ul>
+                        </div>
+                        <img class="carsImg" src="img/carCars1.jpg" alt="Car">
+                    </div>
+                    <div class="autopark-cars-bottom-items">
+                        <p>от <span class="greenText">10000</span> ₸</p>
+                        <a class="btn" href="#">Заказать</a>
+                    </div>
+                </div>
+                <div class="autoParkCars">
+                    <div class="autopark-cars-hover-container">
+                        <div class="carHoverText">
+                            <h3>Car name</h3>
+                            <ul>
+                                <li>Год выпуска: year</li>
+                                <li>Цвет: color</li>
+                                <li>Кол-во мест: seats</li>
+                            </ul>
+                        </div>
+                        <img class="carsImg" src="img/carCars2.jpg" alt="Car">
+                    </div>
+                    <div class="autopark-cars-bottom-items">
+                        <p>от <span class="greenText">10000</span> ₸</p>
+                        <a class="btn" href="#">Заказать</a>
+                    </div>
+                </div>
+                <div class="autoParkCars">
+                    <div class="autopark-cars-hover-container">
+                        <div class="carHoverText">
+                            <h3>Car name</h3>
+                            <ul>
+                                <li>Год выпуска: year</li>
+                                <li>Цвет: color</li>
+                                <li>Кол-во мест: seats</li>
+                            </ul>
+                        </div>
+                        <img class="carsImg" src="img/carCars3.jpg" alt="Car">
+                    </div>
+                    <div class="autopark-cars-bottom-items">
+                        <p>от <span class="greenText">10000</span> ₸</p>
+                        <a class="btn" href="#">Заказать</a>
+                    </div>
+                </div>
+            </div>
+            <section class="atoParkDescribing">
+                <h3>Ассортимент арендных машин</h3>
+                <p>
+                    Среди автопарка нашей компании можно подобрать транспортное средство, которое подойдет именно вам.
+                    Необходимо ли встретить и привезти на встречу гостей из аэропорта или нужна почасовая аренда машины
+                    для доставки участников конференции до места ее проведения, мы предлагаем:
+                </p>
+                <ul>
+                    <li>легковые авто бизнес класса от японских брендов Nissan и Toyota;</li>
+                    <li>
+                        представительские Mercedes Benz 221 и 222 белых и черных цветов,
+                        получившие лучшие отзывы как наиболее престижные и комфортные модели;
+                    </li>
+                    <li>мощные и стильные внедорожники Mercedes Benz и Toyota черного цвета;</li>
+                    <li>
+                        современные представительские минивэны и аккуратные модели эконом класса,
+                        например, серебристый и белый Hyundai Grand Starex.
+                    </li>
+                </ul>
+                <p>
+                    По доступной цене мы предлагаем и специализированный транспорт с водителем для коллективной перевозки.
+                    Среди таковых мы предлагаем заказать автобус на 49-54 места разной степени комфорта.
+                    Встретить делегацию важных людей из аэропорта или организовать поездки по Казахстану небольшого
+                    количества людей, вы можете благодаря услуге аренда микроавтобуса. Это от 11 до 18 одновременно
+                    перевозимых человек. Увидеть фото представительских и бизнес моделей микроавтобусов, а также
+                    оформить их заказ можно непосредственно на сайте нашей транспортной компании.
+                </p>
+            </section>
+        </div>
+    </div>
 
-    <div id="autoPark">
-        <h2 class="commonHeader">Автопарк</h2>
-        <nav id="autoParkNav">
-            <div class="parkNavItem" id="linkBuses">Автобусы</div>
-            <div class="parkNavItem" id="linkMicrobuses">Микроавтобусы</div>
-            <div class="parkNavItem" id="linkMinivans">Минивэны</div>
-            <div class="parkNavItem" id="linkJeeps">Внедорожники</div>
-            <div class="parkNavItem defaultAuto active" id="linkCars">Легковые авто</div>
-        </nav>
-        <div class="autoParkSlideBuses">
-            <div class="autoParkCars">
-                <div class="carHoverText">
-                    <h3>Car name</h3>
-                    <p>
-                        Год выпуска: year<br>
-                        Цвет: color<br>
-                        Кол-во мест: seats<br>
-                    </p>
+    <div class="onlineCalculator">
+        <div class="container">
+            <h2 class="commonHeader">Онлайн Калькулятор аренды автомобиля</h2>
+            <div class="calc-content">
+                <div class="calcLeftContent">
+                    <article>
+                        <p>
+                            Астана Экспресс – это автопарк, который укомплектован современным автотранспортом,
+                            сервис премиум класса и высококвалифицированные водители с внушительным опытом работы.
+                            Вы можете взять автобус в аренду для переезда на курорт, заказать трансфер в аэропорт,
+                            подобрать авто для торжества и заказать множество других услуг по перевозке.
+                        </p>
+                        <p>
+                            Для загородных поездок цену необходимо уточнять индивидуально. Стоит отметить, что клиенты,
+                            сотрудничающие на постоянной основе, могут рассчитывать на аренду оптом по значительно заниженным
+                            тарифам.
+                        </p>
+                        <p>
+                            С помощью нашего интерактивного калькулятора вы сможете подобрать себе автотранспорт.
+                        </p>
+                    </article>
                 </div>
-                <img class="carsImg" src="img/carBuss1.jpg" alt="Car">
-                <p>от <span class="greenText">10000</span> ₸</p>
-                <a class="btn" href="#">Заказать</a>
-            </div>
-            <div class="autoParkCars">
-                <div class="carHoverText">
-                    <h3>Car name</h3>
-                    <p>
-                        Год выпуска: year<br>
-                        Цвет: color<br>
-                        Кол-во мест: seats<br>
-                    </p>
+                <div class="calcRightContent">
+                    <h3 class="calc-rightcontent-header">Выберите число пассажиров и вид аренды:</h3>
+                    <form action="#">
+                        <p class="calcRightContText">Количество человек:</p>
+                        <input id="calcRange" type="range" min="0" max="3" value="1">
+                        <p class="calcNumbPassengers">1-3</p>
+                        <p class="calcNumbPassengers">6-11</p>
+                        <p class="calcNumbPassengers">11-18</p>
+                        <p class="calcNumbPassengers">50-80</p>
+                        <p class="calcRightContText">Вид аренды:</p>
+                        <select>
+                            <option>Почасовая аренда</option>
+                            <option>item1</option>
+                            <option>item2</option>
+                            <option>item3</option>
+                        </select>
+                        <input type="submit" name="submit" value="Подобрать транспорт" id="calcSubmit">
+                    </form>
                 </div>
-                <img class="carsImg" src="img/carBuss2.jpg" alt="Car">
-                <p>от <span class="greenText">10000</span> ₸</p>
-                <a class="btn" href="#">Заказать</a>
-            </div>
-            <div class="autoParkCars">
-                <div class="carHoverText">
-                    <h3>Car name</h3>
-                    <p>
-                        Год выпуска: year<br>
-                        Цвет: color<br>
-                        Кол-во мест: seats<br>
-                    </p>
-                </div>
-                <img class="carsImg" src="img/carBuss3.jpg" alt="Car">
-                <p>от <span class="greenText">10000</span> ₸</p>
-                <a class="btn" href="#">Заказать</a>
             </div>
         </div>
-        <div class="autoParkSlideMicrobuses">
-            <div class="autoParkCars">
-                <div class="carHoverText">
-                    <h3>Car name</h3>
-                    <p>
-                        Год выпуска: year<br>
-                        Цвет: color<br>
-                        Кол-во мест: seats<br>
-                    </p>
-                </div>
-                <img class="carsImg" src="img/carMicrobuses1.jpg" alt="Car">
-                <p>от <span class="greenText">10000</span> ₸</p>
-                <a class="btn" href="#">Заказать</a>
-            </div>
-            <div class="autoParkCars">
-                <div class="carHoverText">
-                    <h3>Car name</h3>
-                    <p>
-                        Год выпуска: year<br>
-                        Цвет: color<br>
-                        Кол-во мест: seats<br>
-                    </p>
-                </div>
-                <img class="carsImg" src="img/carMicrobuses2.jpg" alt="Car">
-                <p>от <span class="greenText">10000</span> ₸</p>
-                <a class="btn" href="#">Заказать</a>
-            </div>
-            <div class="autoParkCars">
-                <div class="carHoverText">
-                    <h3>Car name</h3>
-                    <p>
-                        Год выпуска: year<br>
-                        Цвет: color<br>
-                        Кол-во мест: seats<br>
-                    </p>
-                </div>
-                <img class="carsImg" src="img/carMicrobuses3.jpg" alt="Car">
-                <p>от <span class="greenText">10000</span> ₸</p>
-                <a class="btn" href="#">Заказать</a>
-            </div>
-        </div>
-        <div class="autoParkSlideMinivans">
-            <div class="autoParkCars">
-                <div class="carHoverText">
-                    <h3>Car name</h3>
-                    <p>
-                        Год выпуска: year<br>
-                        Цвет: color<br>
-                        Кол-во мест: seats<br>
-                    </p>
-                </div>
-                <img class="carsImg" src="img/carMinivans1.jpg" alt="Car">
-                <p>от <span class="greenText">10000</span> ₸</p>
-                <a class="btn" href="#">Заказать</a>
-            </div>
-            <div class="autoParkCars">
-                <div class="carHoverText">
-                    <h3>Car name</h3>
-                    <p>
-                        Год выпуска: year<br>
-                        Цвет: color<br>
-                        Кол-во мест: seats<br>
-                    </p>
-                </div>
-                <img class="carsImg" src="img/carMinivans2.jpg" alt="Car">
-                <p>от <span class="greenText">10000</span> ₸</p>
-                <a class="btn" href="#">Заказать</a>
-            </div>
-            <div class="autoParkCars">
-                <div class="carHoverText">
-                    <h3>Car name</h3>
-                    <p>
-                        Год выпуска: year<br>
-                        Цвет: color<br>
-                        Кол-во мест: seats<br>
-                    </p>
-                </div>
-                <img class="carsImg" src="img/carMinivans3.jpg" alt="Car">
-                <p>от <span class="greenText">10000</span> ₸</p>
-                <a class="btn" href="#">Заказать</a>
-            </div>
-        </div>
-        <div class="autoParkSlideJeeps">
-            <div class="autoParkCars">
-                <div class="carHoverText">
-                    <h3>Car name</h3>
-                    <p>
-                        Год выпуска: year<br>
-                        Цвет: color<br>
-                        Кол-во мест: seats<br>
-                    </p>
-                </div>
-                <img class="carsImg" src="img/carJeeps1.jpg" alt="Car">
-                <p>от <span class="greenText">10000</span> ₸</p>
-                <a class="btn" href="#">Заказать</a>
-            </div>
-            <div class="autoParkCars">
-                <div class="carHoverText">
-                    <h3>Car name</h3>
-                    <p>
-                        Год выпуска: year<br>
-                        Цвет: color<br>
-                        Кол-во мест: seats<br>
-                    </p>
-                </div>
-                <img class="carsImg" src="img/carJeeps2.jpg" alt="Car">
-                <p>от <span class="greenText">10000</span> ₸</p>
-                <a class="btn" href="#">Заказать</a>
-            </div>
-            <div class="autoParkCars">
-                <div class="carHoverText">
-                    <h3>Car name</h3>
-                    <p>
-                        Год выпуска: year<br>
-                        Цвет: color<br>
-                        Кол-во мест: seats<br>
-                    </p>
-                </div>
-                <img class="carsImg" src="img/carJeeps3.jpg" alt="Car">
-                <p>от <span class="greenText">10000</span> ₸</p>
-                <a class="btn" href="#">Заказать</a>
-            </div>
-        </div>
-        <div class="autoParkSlideCars active">
-            <div class="autoParkCars">
-                <div class="carHoverText">
-                    <h3>Mercedes Benz Gelandewagen</h3>
-                    <p>
-                        Год выпуска: 2014 г.<br>
-                        Цвет: черный<br>
-                        Кол-во мест: 3<br>
-                    </p>
-                </div>
-                <img class="carsImg" src="img/carCars1.jpg" alt="Car">
-                <p>от <span class="greenText">10000</span> ₸</p>
-                <a class="btn" href="#">Заказать</a>
-            </div>
-            <div class="autoParkCars">
-                <div class="carHoverText">
-                    <h3>Car name</h3>
-                    <p>
-                        Год выпуска: year<br>
-                        Цвет: color<br>
-                        Кол-во мест: seats<br>
-                    </p>
-                </div>
-                <img class="carsImg" src="img/carCars2.jpg" alt="Car">
-                <p>от <span class="greenText">10000</span> ₸</p>
-                <a class="btn" href="#">Заказать</a>
-            </div>
-            <div class="autoParkCars">
-                <div class="carHoverText">
-                    <h3>Car name</h3>
-                    <p>
-                        Год выпуска: year<br>
-                        Цвет: color<br>
-                        Кол-во мест: seats<br>
-                    </p>
-                </div>
-                <img class="carsImg" src="img/carCars3.jpg" alt="Car">
-                <p>от <span class="greenText">10000</span> ₸</p>
-                <a class="btn" href="#">Заказать</a>
-            </div>
-        </div>
-        <section id="atoParkDescribing">
-            <h3>Ассортимент арендных машин</h3>
-            <p>
-                Среди автопарка нашей компании можно подобрать транспортное средство, которое подойдет именно вам.
-                Необходимо ли встретить и привезти на встречу гостей из аэропорта или нужна почасовая аренда машины
-                для доставки участников конференции до места ее проведения, мы предлагаем:
+    </div>
+
+    <div class="advantages">
+        <div class="container">
+            <h2 class="commonHeader">Преимущества</h2>
+            <p class="advantagesDescription">
+                Если вам необходима аренда авто с водителем по Казахстану, “Astana Express” - это лучший выбор среди
+                предложений 2017 года. Заказывая прокат авто у нас, вы получите массу полезных преимуществ, как с
+                финансовой, так и с сервисной стороны. Среди таковых:
             </p>
-            <ul>
-                <li>легковые авто бизнес класса от японских брендов Nissan и Toyota;</li>
-                <li>
-                    представительские Mercedes Benz 221 и 222 белых и черных цветов,
-                    получившие лучшие отзывы как наиболее престижные и комфортные модели;
-                </li>
-                <li>мощные и стильные внедорожники Mercedes Benz и Toyota черного цвета;</li>
-                <li>
-                    современные представительские минивэны и аккуратные модели эконом класса,
-                    например, серебристый и белый Hyundai Grand Starex.
-                </li>
-            </ul>
-            <p>
-                По доступной цене мы предлагаем и специализированный транспорт с водителем для коллективной перевозки.
-                Среди таковых мы предлагаем заказать автобус на 49-54 места разной степени комфорта.
-                Встретить делегацию важных людей из аэропорта или организовать поездки по Казахстану небольшого
-                количества людей, вы можете благодаря услуге аренда микроавтобуса. Это от 11 до 18 одновременно
-                перевозимых человек. Увидеть фото представительских и бизнес моделей микроавтобусов, а также
-                оформить их заказ можно непосредственно на сайте нашей транспортной компании.
-            </p>
-        </section>
-    </div>
-
-<!--....................................Online Calculator....................................-->
-
-    <div id="onlineCalculator">
-        <h2 class="commonHeader">Онлайн Калькулятор аренды автомобиля</h2>
-        <div id="calcLeftContent">
-            <article id="calcDescription">
-                Астана Экспресс – это автопарк, который укомплектован современным автотранспортом,
-                сервис премиум класса и высококвалифицированные водители с внушительным опытом работы.
-                Вы можете взять автобус в аренду для переезда на курорт, заказать трансфер в аэропорт,
-                подобрать авто для торжества и заказать множество других услуг по перевозке.<br>
-                <br>
-                Для загородных поездок цену необходимо уточнять индивидуально. Стоит отметить, что клиенты,
-                сотрудничающие на постоянной основе, могут рассчитывать на аренду оптом по значительно заниженным
-                тарифам.<br>
-                <br>
-                С помощью нашего интерактивного калькулятора вы сможете подобрать себе автотранспорт.
-            </article>
-        </div>
-        <div id="calcRightContent">
-            <h3>Выберите число пассажиров и вид аренды:</h3>
-            <form action="#">
-                <p class="calcRightContText">Количество человек:</p>
-                <input id="calcRange" type="range" min="0" max="3" value="1" oninput="getRangeVal()">
-                <p class="calcNumbPassengers">1-3</p>
-                <p class="calcNumbPassengers">6-11</p>
-                <p class="calcNumbPassengers">11-18</p>
-                <p class="calcNumbPassengers">50-80</p>
-                <p class="calcRightContText">Вид аренды:</p>
-                <select>
-                    <option>Почасовая аренда</option>
-                    <option>item1</option>
-                    <option>item2</option>
-                    <option>item3</option>
-                </select>
-                <input type="submit" name="submit" value="Подобрать транспорт" id="calcSubmit">
-            </form>
+            <div class="advantages-features">
+                <div class="advantagesFeature">
+                    <img src="img/advantagesIconTransport.png" alt="Transport">
+                    <h4>Разнообразный транспорт </h4>
+                    <ul>
+                        <li>автомобили бизнес-класса</li>
+                        <li>внедорожники</li>
+                        <li>минивэны</li>
+                        <li>вместительные автобусы</li>
+                    </ul>
+                </div>
+                <div class="advantagesFeature">
+                    <img src="img/advantagesIconService.png" alt="Transport">
+                    <h4>Премиальный сервис</h4>
+                    <ul>
+                        <li>индивидуальный подход</li>
+                        <li>квалифицированные водители</li>
+                        <li>оптимальные предложения</li>
+                    </ul>
+                </div>
+                <div class="advantagesFeature">
+                    <img src="img/advantagesIconBenefit.png" alt="Transport">
+                    <h4>Ваши выгоды </h4>
+                    <ul>
+                        <li>экономия времени</li>
+                        <li>скидки постоянным клиентам</li>
+                        <li>заказ авто оптом дешевле</li>
+                     </ul>
+                </div>
+            </div>
         </div>
     </div>
 
-<!--....................................Advantages ....................................-->
-
-    <div id="advantages">
-        <h2 class="commonHeader">Преимущества</h2>
-        <p id="advantagesDescription">
-            Если вам необходима аренда авто с водителем по Казахстану, “Astana Express” - это лучший выбор среди
-            предложений 2017 года. Заказывая прокат авто у нас, вы получите массу полезных преимуществ, как с
-            финансовой, так и с сервисной стороны. Среди таковых:
-        </p>
-        <div class="advantagesFeatures">
-            <img src="img/advantagesIconTransport.png" alt="Transport">
-            <h4>Разнообразный транспорт </h4>
-            <ul>
-                <li>автомобили бизнес-класса</li>
-                <li>внедорожники</li>
-                <li>минивэны</li>
-                <li>вместительные автобусы</li>
-            </ul>
-        </div>
-        <div class="advantagesFeatures">
-            <img src="img/advantagesIconService.png" alt="Transport">
-            <h4>Премиальный сервис</h4>
-            <ul>
-                <li>индивидуальный подход</li>
-                <li>квалифицированные водители</li>
-                <li>оптимальные предложения</li>
-            </ul>
-        </div>
-        <div class="advantagesFeatures">
-            <img src="img/advantagesIconBenefit.png" alt="Transport">
-            <h4>Ваши выгоды </h4>
-            <ul>
-                <li>экономия времени</li>
-                <li>скидки постоянным клиентам</li>
-                <li>заказ авто оптом дешевле</li>
-             </ul>
-        </div>
-    </div>
-
-<!--....................................Transport order ....................................-->
-
-
-
-<div id="transportOrder">
-    <div class="wrapper-transportOrder footrer-contact">
+    <div class="transportOrder">
         <div class="container">
             <h2 class="commonHeader">Заказать транспорт</h2>
-            <form action="#">
+            <form action="#" class="order-form">
                 <div class="order-block-input">
+                    <label class="client-input-data">Ваше имя</label>
                     <input id="orderFormName" type="text" name="nickname" oninput="checkName()">
-                    <p id="orderClientName">Ваше имя</p>
                 </div>
                 <div class="order-block-input">
+                    <label class="client-input-data">Телефон</label>
                     <input id="orderFormPhone" type="text" name="phoneNumber" oninput="checkPhone()">
-                    <p id="orderClientPhone">Телефон</p>
                 </div>
                 <input type="submit" name="submit" value="Жду звонка" id="orderSubmit">
             </form>
         </div>
     </div>
-</div>
 
-<!--....................................Testimonials....................................-->
-
-    <div id="testimonials">
-        <div id="testimonLeftContent">
-            <h2 class="commonHeader">Отзывы клиентов</h2>
-            <article id="testimDescription">
-                Компания заслужила доверие множества отечественных и зарубежных заказчиков, 
-                работающих в разнообразных областях – от учебных заведений до крупных корпораций. 
-                Для некоторых компаний мы стали постоянным перевозчиком.
-            </article>
-            <div id="sliderBtnLeft"><img src="img/arrowLeft.png" alt="Left"></div>
-            <div id="sliderBtnRight"><img src="img/arrowRight.png" alt="Right"></div>
-        </div>
-        <div id="testimonRightContent">
-            <img src="img/quotes.png" alt="quote">
-            <div id="testimSlider">
-                <div class="testimSlide active">
-                    <h3 class="testimClientName">Гюльнара, 32 года, г. Караганда</h3>
-                    <p class="clientTestimonial">
-                        Хочу выразить благодарность Астана Экспресс за высочайший уровень организации нашей с сотрудником
-                        поездки в Караганду, а также за превосходный сервис и профессионализм. Уже не раз обращаюсь за машиной
-                        в эту компанию. Особая благодарность водителю Мерседеса за его высокую квалификацию, приятное общение
-                        и скорость доставки нас на место. Ситуация оказалась непредвиденной, машина нужна была срочно, и наш
-                        уже постоянный перевозчик не подвел.
-                    </p>
-                </div>
-                <div class="testimSlide">
-                    <h3 class="testimClientName">Имя клиента №2</h3>
-                    <p class="clientTestimonial">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium aliquid amet beatae,
-                        consequuntur cum cumque dolore dolores eaque eligendi enim facilis necessitatibus nemo odio
-                        perferendis porro tempora velit, voluptatem.
-                    </p>
-                </div>
-                <div class="testimSlide">
-                    <h3 class="testimClientName">Имя клиента №3</h3>
-                    <p class="clientTestimonial">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium aliquid amet beatae,
-                        consequuntur cum cumque dolore dolores eaque eligendi enim facilis necessitatibus nemo odio
-                        perferendis porro tempora velit, voluptatem.
-                    </p>
+    <div class="testimonials">
+        <div class="container">
+            <div class="testimonLeftContent">
+                <h2 class="commonHeader">Отзывы клиентов</h2>
+                <article class="testimDescription">
+                    Компания заслужила доверие множества отечественных и зарубежных заказчиков,
+                    работающих в разнообразных областях – от учебных заведений до крупных корпораций.
+                    Для некоторых компаний мы стали постоянным перевозчиком.
+                </article>
+                <div class="sliderBtnLeft"><img src="img/arrowLeft.png" alt="Left"></div>
+                <div class="sliderBtnRight"><img src="img/arrowRight.png" alt="Right"></div>
+            </div>
+            <div class="testimonRightContent">
+                <img src="img/quotes.png" alt="quote">
+                <div id="testimSlider">
+                    <div class="testimSlide active">
+                        <h3 class="testimClientName">Гюльнара, 32 года, г. Караганда</h3>
+                        <p class="clientTestimonial">
+                            Хочу выразить благодарность Астана Экспресс за высочайший уровень организации нашей с сотрудником
+                            поездки в Караганду, а также за превосходный сервис и профессионализм. Уже не раз обращаюсь за машиной
+                            в эту компанию. Особая благодарность водителю Мерседеса за его высокую квалификацию, приятное общение
+                            и скорость доставки нас на место. Ситуация оказалась непредвиденной, машина нужна была срочно, и наш
+                            уже постоянный перевозчик не подвел.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
-<!--....................................Rental describing....................................-->
-
-    <div id="rentDescribing">
-        <h2 class="commonHeader">Аренда авто с водителем в Астане </h2>
-        <article id="renDescrContent">
-            <p>
-                Благодаря собственному автопарку с транспортными средствами различной вместимости, такую услугу как
-                аренда авто Астана может оформить благодаря нашей компании “Astana Express”. Занимаясь транспортными
-                перевозками уже достаточно продолжительное время, мы предлагаем лучшие варианты автотранспорта, который
-                можно заказать с личным опытным водителем.<br>
-                <br>
-                В зависимости от назначения, предлагаемая нами услуга аренды
-                авто в Астане позволяет выбрать необходимый автомобиль, который наиболее подойдет к грядущему мероприятию.
-                Опытный водитель, отлично знающий город, быстро, аккуратно и комфортно довезет в нужное место. Каким бы ни
-                был ваш заказ, мы готовы дать гарантию качественного выполнения предоставляемых услуг. Ассортимент
-                арендных машин
-            </p>
-            <h3>Дополнительные услуги</h3>
-            <p>В наши дни трудно переоценить важность пассажирских перевозок. Однако с нами вы можете быть уверенны
-                в завтрашнем дне. Мы предлагаем неограниченный выбор услуг, включая деловые перевозки по Казахстану,
-                междугородний и корпоративный трансфер, туристические экскурсии, предоставление транспорта для
-                различных торжественных мероприятий и многое другое.<br>
-                <br>
-                Существует несколько причин, по которым следует заказать автобус в нашей компании:
-            </p>
-            <ul>
-                <li>
-                    выгодная стоимость — цена услуг на порядок ниже, чем предлагает рынок, при этом качество
-                    самого сервиса используется многими в качестве образца;
-                </li>
-                <li>
-                    продуманная логистика — наши сотрудники всегда грамотно разрабатывают маршруты, учитывая
-                    определенные особенности транспорта и/или дороги, а также предпочтения клиентов;
-                </li>
-                <li>
-                    большой автопарк — ASTANA EXPRESS располагает множеством единиц транспорта, которые
-                    отличаются между собой классом и вместительностью;
-                </li>
-                <li>
-                    безопасность — мы нанимаем только профессиональных водителей с большим стажем, которые отличаются
-                    ответственностью и моментально реагируют в любых сложных ситуациях;
-                </li>
-                <li>
-                    оперативность — мы предельно точно рассчитываем маршрут для того, чтобы доставить пассажиров в
-                    нужный пункт без минимальных задержек и опозданий.
-                </li>
-            </ul>
-        </article>
+    <div class="rentDescribing">
+        <div class="container">
+            <h2 class="commonHeader">Аренда авто с водителем в Астане </h2>
+            <article id="renDescrContent">
+                <p>
+                    Благодаря собственному автопарку с транспортными средствами различной вместимости, такую услугу как
+                    аренда авто Астана может оформить благодаря нашей компании “Astana Express”. Занимаясь транспортными
+                    перевозками уже достаточно продолжительное время, мы предлагаем лучшие варианты автотранспорта, который
+                    можно заказать с личным опытным водителем.
+                </p>
+                <p>
+                    В зависимости от назначения, предлагаемая нами услуга аренды
+                    авто в Астане позволяет выбрать необходимый автомобиль, который наиболее подойдет к грядущему мероприятию.
+                    Опытный водитель, отлично знающий город, быстро, аккуратно и комфортно довезет в нужное место. Каким бы ни
+                    был ваш заказ, мы готовы дать гарантию качественного выполнения предоставляемых услуг. Ассортимент
+                    арендных машин
+                </p>
+                <h3>Дополнительные услуги</h3>
+                <p>В наши дни трудно переоценить важность пассажирских перевозок. Однако с нами вы можете быть уверенны
+                    в завтрашнем дне. Мы предлагаем неограниченный выбор услуг, включая деловые перевозки по Казахстану,
+                    междугородний и корпоративный трансфер, туристические экскурсии, предоставление транспорта для
+                    различных торжественных мероприятий и многое другое.
+                </p>
+                <p>
+                    Существует несколько причин, по которым следует заказать автобус в нашей компании:
+                </p>
+                <ul>
+                    <li>
+                        выгодная стоимость — цена услуг на порядок ниже, чем предлагает рынок, при этом качество
+                        самого сервиса используется многими в качестве образца;
+                    </li>
+                    <li>
+                        продуманная логистика — наши сотрудники всегда грамотно разрабатывают маршруты, учитывая
+                        определенные особенности транспорта и/или дороги, а также предпочтения клиентов;
+                    </li>
+                    <li>
+                        большой автопарк — ASTANA EXPRESS располагает множеством единиц транспорта, которые
+                        отличаются между собой классом и вместительностью;
+                    </li>
+                    <li>
+                        безопасность — мы нанимаем только профессиональных водителей с большим стажем, которые отличаются
+                        ответственностью и моментально реагируют в любых сложных ситуациях;
+                    </li>
+                    <li>
+                        оперативность — мы предельно точно рассчитываем маршрут для того, чтобы доставить пассажиров в
+                        нужный пункт без минимальных задержек и опозданий.
+                    </li>
+                </ul>
+            </article>
+        </div>
     </div>
 
 <!--....................................Blog....................................-->
