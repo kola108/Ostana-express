@@ -34,7 +34,7 @@
 .commonHeader:after {
   content: '';
   display: block;
-  width: 73px;
+  max-width: 73px;
   height: 2px;
   border-bottom: 3px solid #00bc65;
   margin: 6px auto;
@@ -100,6 +100,38 @@
   font-family: 'HelveticaNeueCyr', sans-serif;
   font-size: 18px;
 }
+.header .container .header-right-content .mobile-menu {
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  background-color: darkgray;
+  position: relative;
+  display: none;
+  border: 2px solid #00bc65;
+  float: right;
+}
+.header .container .header-right-content .mobile-menu:after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 80%;
+  top: 15px;
+  margin: 0 auto;
+  height: 6px;
+  border-top: 2px solid #00bc65;
+  border-bottom: 2px solid #00bc65;
+}
+.header .container .header-right-content .mobile-menu:before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 80%;
+  bottom: 15px;
+  margin: 0 auto;
+  height: 6px;
+  border-top: 2px solid #00bc65;
+  border-bottom: 2px solid #00bc65;
+}
 .carRental {
   background-color: #f4f4f4;
 }
@@ -114,12 +146,16 @@
   font-weight: bolder;
   letter-spacing: 1px;
 }
-.carRental .car-rental-left-content {
+.carRental .car-rental-content {
+  display: flex;
+  justify-content: space-between;
+}
+.carRental .car-rental-content .car-rental-left-content {
   padding-top: 92px;
-  width: 39%;
+  width: 35%;
   display: inline-block;
 }
-.carRental .car-rental-left-content .rentalTab {
+.carRental .car-rental-content .car-rental-left-content .rentalTab {
   text-align: right;
   position: relative;
   display: flex;
@@ -132,7 +168,7 @@
   box-sizing: border-box;
   cursor: pointer;
 }
-.carRental .car-rental-left-content .rentalTab:after {
+.carRental .car-rental-content .car-rental-left-content .rentalTab:after {
   content: '';
   display: inline-block;
   height: 100%;
@@ -143,7 +179,7 @@
   box-sizing: border-box;
   margin-left: 48px;
 }
-.carRental .car-rental-left-content .rentalTab .car-rent-tabs-box {
+.carRental .car-rental-content .car-rental-left-content .rentalTab .car-rent-tabs-box {
   text-align: left;
   height: 64px;
   width: 240px;
@@ -151,27 +187,27 @@
   align-items: center;
   padding-right: 80px;
 }
-.carRental .car-rental-left-content .rentalTab .car-rent-tabs-box .car-rent-tab-ico {
+.carRental .car-rental-content .car-rental-left-content .rentalTab .car-rent-tabs-box .car-rent-tab-ico {
   display: flex;
   align-items: center;
   width: 45px;
   height: 40px;
 }
-.carRental .car-rental-left-content .rentalTab .car-rent-tabs-box p {
+.carRental .car-rental-content .car-rental-left-content .rentalTab .car-rent-tabs-box p {
   display: inline-block;
   padding-left: 16px;
 }
-.carRental .car-rental-left-content .rentalTab:hover {
+.carRental .car-rental-content .car-rental-left-content .rentalTab:hover {
   background-color: white;
 }
-.carRental .car-rental-left-content .rentalTab:hover:after {
+.carRental .car-rental-content .car-rental-left-content .rentalTab:hover:after {
   opacity: 1;
 }
-.carRental .car-rental-left-content .rentalTab:hover .car-rent-tabs-box p {
+.carRental .car-rental-content .car-rental-left-content .rentalTab:hover .car-rent-tabs-box p {
   font-size: 18px;
   color: #00bc65;
 }
-.carRental .car-rental-right-content {
+.carRental .car-rental-content .car-rental-right-content {
   padding: 92px 0;
   position: relative;
   width: 60%;
@@ -183,30 +219,30 @@
   margin: 0;
   display: inline-block;
 }
-.carRental .car-rental-right-content .commonHeader {
-  width: 331px;
+.carRental .car-rental-content .car-rental-right-content .commonHeader {
+  max-width: 331px;
   display: block;
   text-align: left;
 }
-.carRental .car-rental-right-content .commonHeader:after {
+.carRental .car-rental-content .car-rental-right-content .commonHeader:after {
   margin: 6px 0;
 }
-.carRental .car-rental-right-content .car-rent-article {
+.carRental .car-rental-content .car-rental-right-content .car-rent-article {
   font-family: 'Roboto', sans-serif;
   font-size: 15px;
   padding: 50px 0 92px 0;
   line-height: 1.53;
   display: block;
-  width: 331px;
+  max-width: 331px;
 }
-.carRental .car-rental-right-content .btn {
+.carRental .car-rental-content .car-rental-right-content .btn {
   text-transform: uppercase;
   color: black;
   font-family: 'HelveticaNeueCyr', sans-serif;
   font-size: 15px;
   line-height: 1.53;
 }
-.carRental .car-rental-right-content .btn img {
+.carRental .car-rental-content .car-rental-right-content .btn img {
   width: 14px;
   height: 10px;
   margin: 0;
@@ -662,7 +698,6 @@
 .blog .container .blog-sections {
   padding: 35px 0 118px 0;
   width: 100%;
-  max-height: 588px;
   display: flex;
   justify-content: space-between;
 }
@@ -791,11 +826,90 @@
   height: 37px;
 }
 /*....................................Media queries....................................*/
-/*
 @media all and (max-width: 1800px) {
-
+  .carRental .car-rental-content .car-rental-right-content {
+    background-position: 30% 100%;
+  }
 }
-  #carRentalTabs{jj
+@media all and (max-width: 1190px) {
+  .container {
+    padding-left: 10px!important;
+    padding-right: 10px!important;
+  }
+}
+@media all and (max-width: 1140px) {
+  .autoPark .container .autoParkSlideCars {
+    flex-direction: column;
+  }
+  .autoPark .container .autoParkSlideCars .autoParkCars .autopark-cars-hover-container {
+    width: 100%;
+    height: 30%;
+  }
+  .autoPark .container .autoParkSlideCars .autoParkCars .autopark-cars-hover-container .carHoverText {
+    text-align: center;
+  }
+  .autoPark .container .autoParkSlideCars .autoParkCars .autopark-cars-hover-container .carHoverText h3 {
+    padding: 15% 0  4% 0 ;
+  }
+  .autoPark .container .autoParkSlideCars .autoParkCars .autopark-cars-hover-container .carHoverText ul li {
+    padding: 3% 0;
+  }
+  .autoPark .container .autoParkSlideCars .autoParkCars .autopark-cars-bottom-items {
+    justify-content: center;
+    padding-bottom: 30px;
+    padding-top: 0;
+  }
+  .autoPark .container .autoParkSlideCars .autoParkCars .autopark-cars-bottom-items p {
+    margin-right: 20%;
+  }
+  .transportOrder .container .order-form {
+    flex-direction: column;
+    align-items: center;
+  }
+  .transportOrder .container .order-form #orderSubmit {
+    margin-top: 10vw;
+  }
+  .blog .container .blog-sections {
+    flex-direction: column;
+    align-items: center;
+  }
+  .blog .container .blog-sections .blogFirstSection,
+  .blog .container .blog-sections .blogSecondSection {
+    width: 100%;
+    background-size: 571px 380px;
+    background-position: top center;
+    padding-bottom: 10vh;
+  }
+}
+@media all and (max-width: 980px) {
+  .header .container .header-right-content .headerNav .headerNavItem {
+    display: none;
+  }
+  .header .container .header-right-content .mobile-menu {
+    display: block;
+  }
+  .carRental .car-rental-content .car-rental-left-content {
+    width: 48%;
+  }
+  .carRental .car-rental-content .car-rental-left-content .rentalTab .car-rent-tabs-box {
+    width: 50%;
+  }
+  .carRental .car-rental-content .car-rental-right-content {
+    width: 48%;
+    background: none;
+  }
+  .advantages .container .advantages-features {
+    flex-direction: column;
+    align-items: center;
+  }
+  .advantages .container .advantages-features .advantagesFeature {
+    margin-bottom: 10vh;
+  }
+  .advantages .container .advantages-features .advantagesFeature :last-child {
+    margin-bottom: 0;
+  }
+}
+/*#carRentalTabs{jj
     width: 33%;
     .active{
       :after {display: none;}
