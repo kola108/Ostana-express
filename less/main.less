@@ -129,8 +129,7 @@
   }
   .car-rental-left-content{
     padding-top: 92px;
-    //max-width: 675px;
-    width: 675px;
+    width: 39%;
     display: inline-block;
     .rentalTab{
       text-align: right;
@@ -186,10 +185,9 @@
     }
   }
   .car-rental-right-content{
-    padding: 92px 0 92px 80px;
+    padding: 92px 0;
     position: relative;
-    //max-width: 1144px;
-    width: 1144px;
+    width: 60%;
     background: url("../img/carRentImg1.png");
     background-repeat: no-repeat;
     background-position: bottom right;
@@ -654,132 +652,138 @@
   }
 }
 
-
-/*....................................Blog....................................*/
-
-#blog{
-  text-align: center;
+.blog{
   background-color: @grayColor;
-  .commonHeader{
-    padding: 71px 0 35px 0;
-  }
-}
-#blogFirstSection, #blogSecondSection{
-  width: 571px;
-  height: 664px;
-  display: inline-block;
-  vertical-align: top;
-  background-repeat: no-repeat;
-  background-size: 571px 380px;
-}
-#blogFirstSection{background-image: url("../img/blogIMG1.jpg");}
-#blogSecondSection{background-image: url("../img/blogIMG2.jpg"); margin-left: 28px;}
-.blogSecText{
-  width: 514px;
-  height: 276px;
-  background-color: white;
-  text-align: left;
-  margin: 306px auto 0 auto;
-  font-family: @helvetica;
-  font-size: 15px;
-  line-height: 1.53;
-  p {
-    padding: 20px 43px;
-    box-sizing: border-box;
-    margin: 0;
-  }
-}
-#blogFirstSecHead, #blogSecondSecHead{
-  color: white;
-  font-size: 18px;
-  line-height: 1.28;
-  display: inline-block;
-  width: 257px;
-  height: 74px;
-  margin: 0;
-  background-color: @greenColor;
-  text-transform: uppercase;
-  box-sizing: border-box;
-}
-#blogFirstSecHead{padding: 27px 0 0 42px;}
-#blogSecondSecHead{padding: 15px 0 0 42px;}
-
-/*....................................Footer....................................*/
-
-footer{
-  background-color: @blackColor;
-  color: white;
-  font-family: @helvetica;
-  font-size: 14px;
-  text-align: center;
-  line-height: 1.14;
-  font-weight: 100;
-  padding-top: 30px;
-  p:nth-child(3){
-    line-height: 1.64;
-    margin-left: 130px;
-  }
-  p:nth-child(4){
-    line-height: 2;
-    text-transform: uppercase;
-    margin-left: 160px;
-  }
-
-}
-#footerLogo, .footerText{
-  display: inline-block;
-  text-align: left;
-  vertical-align: top;
-}
-#footerLogo{
-  width: 220px;
-  img{
-    width: 90px;
-    height: 90px;
-    display: block;
-    padding-top: 8px;
-  }
-  p{
-    padding-top: 26px;
-  }
-}
-.footerText{
-  width: 200px;
-  margin-left: 100px;
-}
-.footerText :last-child {text-transform: uppercase;}
-#socialBar{
-  background-color: black;
-  display: block;
-  padding-top: 20px;
-  box-sizing: border-box;
-  height: 70px;
-  nav, p, img{
-    display: inline-block;
-    vertical-align: top;
-  }
-  a{
-    img {
-      height: 28px;
-      width: 28px;
-      transition: all 0.2s linear;
+  .container {
+    padding-top: 70px;
+    .blog-sections{
+      padding: 35px 0 118px 0;
+      width: 100%;
+      max-height: 588px;
+      display: flex;
+      justify-content: space-between;
+      .blogFirstSection, .blogSecondSection{
+        width: 49%;
+        height: 100%;
+        display: inline-block;
+        vertical-align: top;
+        background-repeat: no-repeat;
+        background-size: 100% 65%;
+      }
+      .blogFirstSection{background-image: url("../img/blogIMG1.jpg");}
+      .blogSecondSection{background-image: url("../img/blogIMG2.jpg");}
+      .blogSecText{
+        max-width: 514px;
+        max-height: 276px;
+        position: relative;
+        background-color: white;
+        text-align: left;
+        margin: 300px auto 0 auto;
+        font-family: @helvetica;
+        font-size: 15px;
+        line-height: 1.53;
+        p {
+          padding: 20px 42px 75px 42px;
+          box-sizing: border-box;
+          margin: 0;
+        }
+      }
+      .blogSecHead{
+        color: white;
+        font-size: 18px;
+        line-height: 1.28;
+        display: flex;
+        align-items: center;
+        width: 50%;
+        height: 74px;
+        margin: 0;
+        padding-left: 42px;
+        background-color: @greenColor;
+        text-transform: uppercase;
+        box-sizing: border-box;
       }
     }
-  p{
-    color: lightgray;
-    padding: 0 8px 20px 813px;
   }
-  img {
-    width: 89px;
-    height: 37px;
-    padding-right: 10px;
+}
+
+.footer{
+  background-color: @blackColor;
+  .container{
+    padding: 30px 0;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-family: @helvetica;
+    font-size: 14px;
+    line-height: 1.14;
+    font-weight: 100;
+    text-align: left;
+    .footerLogo{
+      max-width: 220px;
+      img{
+        width: 90px;
+        height: 90px;
+        display: block;
+        padding-top: 8px;
+      }
+      p{
+        padding-top: 26px;
+        color: lightgray;
+      }
+    }
+    ul:nth-child(3){line-height: 1.64;}
+    ul:nth-child(2){line-height: 1.57;}
+    ul:last-child{
+      text-transform: uppercase;
+      line-height: 2;
+    }
+    .footerText {
+      max-width: 200px;
+      margin: 0;
+      padding: 0;
+      :first-child {text-transform: uppercase;}
+      li {list-style-type: none;}
+    }
+  }
+}
+.socialBar{
+  background-color: black;
+  .container{
+    padding: 20px 0;
+    align-items: center;
+    .footer-left-content{
+      width: 50%;
+      a{
+        margin-right: 12px;
+      img {
+        height: 28px;
+        width: 28px;
+      }
+    }
+    }
+    .footer-right-content{
+      width: 50%;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      p{
+        color: lightgray;
+        padding-right: 10px;
+      }
+      img {
+        width: 89px;
+        height: 37px;
+      }
+    }
   }
 }
 
 /*....................................Media queries....................................*/
 /*
-@media all and (max-width: 1910px) {
-  #carRentalTabs{
+@media all and (max-width: 1800px) {
+
+}
+  #carRentalTabs{jj
     width: 33%;
     .active{
       :after {display: none;}
