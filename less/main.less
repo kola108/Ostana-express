@@ -111,35 +111,45 @@
         }
       }
       .mobile-menu{
-        width: 60px;
-        height: 60px;
-        border-radius: 10px;
-        background-color: darkgray;
+        width: 40px;
+        height: 40px;
+        background-color: transparent;
         position: relative;
         display: none;
         border: 2px solid @greenColor;
+        border-radius: 20%;
         float: right;
+        cursor: pointer;
         &:after{
           content: '';
           display: block;
           position: absolute;
-          width: 80%;
+          width: 70%;
           top: 15px;
-          margin:0 auto;
+          margin: 0 auto;
           height: 6px;
           border-top: 2px solid @greenColor;
           border-bottom: 2px solid @greenColor;
+          border-radius: 20%;
         }
         &:before{
           content: '';
           display: block;
           position: absolute;
-          width: 80%;
+          width: 70%;
           bottom: 15px;
           margin: 0 auto;
           height: 6px;
           border-top: 2px solid @greenColor;
           border-bottom: 2px solid @greenColor;
+          border-radius: 20%;
+        }
+        &:hover{
+          background-color: @greenColor;
+          &:after, &:before{
+            border-top: 2px solid white;
+            border-bottom: 2px solid white
+          }
         }
       }
     }
@@ -745,16 +755,20 @@
   background-color: @blackColor;
   .container{
     padding: 30px 0;
-    display: flex;
-    justify-content: space-between;
     color: white;
     font-family: @helvetica;
     font-size: 14px;
     line-height: 1.14;
     font-weight: 100;
     text-align: left;
-    .footerLogo{
-      max-width: 220px;
+    &:after{
+      content: '';
+      display: block;
+      clear: both;
+    }
+    .footer-items{
+      width: 25%;
+      float: left;
       img{
         width: 90px;
         height: 90px;
@@ -765,19 +779,21 @@
         padding-top: 26px;
         color: lightgray;
       }
+      margin: 0;
+      padding: 0;
+      :first-child {text-transform: uppercase;}
+      li {list-style-type: none;}
+/*      .footer-items-wrap{
+        padding-left: 40px;
+      }*/
     }
     ul:nth-child(3){line-height: 1.64;}
     ul:nth-child(2){line-height: 1.57;}
     ul:last-child{
       text-transform: uppercase;
       line-height: 2;
-    }
-    .footerText {
-      max-width: 200px;
-      margin: 0;
-      padding: 0;
-      :first-child {text-transform: uppercase;}
-      li {list-style-type: none;}
+      width: 20%;
+      padding-left: 5%;
     }
   }
 }
@@ -835,6 +851,12 @@
 @media all and (max-width: 1140px) {
   .autoPark {
     .container{
+      .autoParkNav{
+        .parkNavItem{
+          margin-bottom: 10px;
+          &:after{display: none;}
+        }
+      }
       .autoParkSlideCars {
         flex-direction: column;
         .autoParkCars{
@@ -889,14 +911,43 @@
 @media all and (max-width: 980px) {
   .header {
     .container {
+      .header-left-content{
+        .logo{
+          height: 12vw;
+          width: 12vw;
+        }
+      }
       .header-right-content {
         .headerNav{
+          margin-top: 4vw;
           .headerNavItem{
             display: none;
           }
+          .btn{
+            font-size: 2vw;
+            padding: 1vw 1vw;
+          }
         }
         .mobile-menu {
-          display: block;
+          display: inline-block;
+          float: right;
+        }
+        .headerPhone{
+          display: inline-block;
+          width: 100%;
+          text-align: center;
+          img{
+            width: 5vw;
+            height: 5vw;
+            display: inline-block;
+          }
+          .phoneNumber{
+            color: white;
+            font-size: 2vw;
+            display: inline-block;
+            padding-top: 2vw;
+            margin: 0;
+          }
         }
       }
     }
@@ -926,6 +977,45 @@
           margin-bottom: 10vh;
           :last-child{margin-bottom:0}
         }
+      }
+    }
+  }
+}
+
+@media all and (max-width: 600px) {
+  .carRental{
+    .car-rental-content{
+      .car-rental-right-content{
+        .commonHeader{
+
+        }
+      }
+    }
+  }
+.footer{
+    .container {
+      flex-direction: column;
+      align-items: center;
+      .footerLogo{
+        text-align: center;
+        img{ display: inline-block; }
+      }
+      .footerText{
+        text-align: center;
+        margin-top: 35px;
+      }
+    }
+  }
+  .socialBar{
+    .container{
+      justify-content: space-around;
+      .footer-left-content{
+        width: 100%;
+        text-align: center;
+      }
+      .footer-right-content{
+        width: 100%;
+        justify-content: center;
       }
     }
   }

@@ -101,36 +101,47 @@
   font-size: 18px;
 }
 .header .container .header-right-content .mobile-menu {
-  width: 60px;
-  height: 60px;
-  border-radius: 10px;
-  background-color: darkgray;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
   position: relative;
   display: none;
   border: 2px solid #00bc65;
+  border-radius: 20%;
   float: right;
+  cursor: pointer;
 }
 .header .container .header-right-content .mobile-menu:after {
   content: '';
   display: block;
   position: absolute;
-  width: 80%;
+  width: 70%;
   top: 15px;
   margin: 0 auto;
   height: 6px;
   border-top: 2px solid #00bc65;
   border-bottom: 2px solid #00bc65;
+  border-radius: 20%;
 }
 .header .container .header-right-content .mobile-menu:before {
   content: '';
   display: block;
   position: absolute;
-  width: 80%;
+  width: 70%;
   bottom: 15px;
   margin: 0 auto;
   height: 6px;
   border-top: 2px solid #00bc65;
   border-bottom: 2px solid #00bc65;
+  border-radius: 20%;
+}
+.header .container .header-right-content .mobile-menu:hover {
+  background-color: #00bc65;
+}
+.header .container .header-right-content .mobile-menu:hover:after,
+.header .container .header-right-content .mobile-menu:hover:before {
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
 }
 .carRental {
   background-color: #f4f4f4;
@@ -751,8 +762,6 @@
 }
 .footer .container {
   padding: 30px 0;
-  display: flex;
-  justify-content: space-between;
   color: white;
   font-family: 'HelveticaNeueCyr', sans-serif;
   font-size: 14px;
@@ -760,18 +769,35 @@
   font-weight: 100;
   text-align: left;
 }
-.footer .container .footerLogo {
-  max-width: 220px;
+.footer .container:after {
+  content: '';
+  display: block;
+  clear: both;
 }
-.footer .container .footerLogo img {
+.footer .container .footer-items {
+  width: 25%;
+  float: left;
+  margin: 0;
+  padding: 0;
+  /*      .footer-items-wrap{
+        padding-left: 40px;
+      }*/
+}
+.footer .container .footer-items img {
   width: 90px;
   height: 90px;
   display: block;
   padding-top: 8px;
 }
-.footer .container .footerLogo p {
+.footer .container .footer-items p {
   padding-top: 26px;
   color: lightgray;
+}
+.footer .container .footer-items :first-child {
+  text-transform: uppercase;
+}
+.footer .container .footer-items li {
+  list-style-type: none;
 }
 .footer .container ul:nth-child(3) {
   line-height: 1.64;
@@ -782,17 +808,8 @@
 .footer .container ul:last-child {
   text-transform: uppercase;
   line-height: 2;
-}
-.footer .container .footerText {
-  max-width: 200px;
-  margin: 0;
-  padding: 0;
-}
-.footer .container .footerText :first-child {
-  text-transform: uppercase;
-}
-.footer .container .footerText li {
-  list-style-type: none;
+  width: 20%;
+  padding-left: 5%;
 }
 .socialBar {
   background-color: black;
@@ -838,6 +855,12 @@
   }
 }
 @media all and (max-width: 1140px) {
+  .autoPark .container .autoParkNav .parkNavItem {
+    margin-bottom: 10px;
+  }
+  .autoPark .container .autoParkNav .parkNavItem:after {
+    display: none;
+  }
   .autoPark .container .autoParkSlideCars {
     flex-direction: column;
   }
@@ -882,11 +905,40 @@
   }
 }
 @media all and (max-width: 980px) {
+  .header .container .header-left-content .logo {
+    height: 12vw;
+    width: 12vw;
+  }
+  .header .container .header-right-content .headerNav {
+    margin-top: 4vw;
+  }
   .header .container .header-right-content .headerNav .headerNavItem {
     display: none;
   }
+  .header .container .header-right-content .headerNav .btn {
+    font-size: 2vw;
+    padding: 1vw 1vw;
+  }
   .header .container .header-right-content .mobile-menu {
-    display: block;
+    display: inline-block;
+    float: right;
+  }
+  .header .container .header-right-content .headerPhone {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+  }
+  .header .container .header-right-content .headerPhone img {
+    width: 5vw;
+    height: 5vw;
+    display: inline-block;
+  }
+  .header .container .header-right-content .headerPhone .phoneNumber {
+    color: white;
+    font-size: 2vw;
+    display: inline-block;
+    padding-top: 2vw;
+    margin: 0;
   }
   .carRental .car-rental-content .car-rental-left-content {
     width: 48%;
@@ -907,6 +959,33 @@
   }
   .advantages .container .advantages-features .advantagesFeature :last-child {
     margin-bottom: 0;
+  }
+}
+@media all and (max-width: 600px) {
+  .footer .container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer .container .footerLogo {
+    text-align: center;
+  }
+  .footer .container .footerLogo img {
+    display: inline-block;
+  }
+  .footer .container .footerText {
+    text-align: center;
+    margin-top: 35px;
+  }
+  .socialBar .container {
+    justify-content: space-around;
+  }
+  .socialBar .container .footer-left-content {
+    width: 100%;
+    text-align: center;
+  }
+  .socialBar .container .footer-right-content {
+    width: 100%;
+    justify-content: center;
   }
 }
 /*#carRentalTabs{jj
